@@ -1,0 +1,165 @@
+
+/* CSS NAV MENU */
+
+body {
+    background-image: url("../images/achtergrond.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Axure Handwriting";
+    font-size: 18px;
+    text-align: left;
+    color: #676767;
+    padding: 0px;
+    margin: 0px;
+    max-height: 100%;
+}
+
+/* Menubalk */
+.logo {
+    background-color: none;
+    padding-left: 20px;
+    display: inline;
+}
+
+header {
+    height: 55px;
+    width: 100%;
+    padding: 0px;
+    margin-top: 0px;
+    position: static;
+    background-color: white;
+}
+
+/* Buttons index */
+
+.skills {
+    padding-left: 50px;
+}
+
+.laptop {
+    padding: 20px 0px 0px 0px;
+}
+
+.over {
+    padding: 0px;
+}
+
+.buttons img:hover {
+    -webkit-filter: 
+            drop-shadow(2px 2px 0 white)
+            drop-shadow(-2px -2px 0 white);
+    filter: drop-shadow(2px 2px 0 white) 
+            drop-shadow(-2px -2px 0 white);
+}
+
+/* images algemeen */
+
+/* images skills */
+.art {
+  padding: 20px 0px 0px 50px;
+}
+
+/* images portfolio */
+.bril {
+  padding: 30px 0px 0px 50px;
+}
+
+.rechts {
+  padding: 20px 20px 20px 10px;
+}
+
+.project {
+  padding: 20px 20px 20px 70px;
+}
+
+/* images over */
+.about {
+  padding-left: 50px;
+}
+
+/* Tags Algemeen*/
+
+audio {
+  float: right;
+}
+
+a {
+  color: #B76E79;
+  text-decoration: none;
+}
+
+p {
+  color: black;
+  padding: 0px 50px 0px 70px;
+}
+
+h1 {
+  font-family: "Vivaldi";
+  font-size: 50px;
+  color: #7b5459;
+  padding-top: 50px;
+  margin: 0px;
+}
+
+h2 {
+  font-family: "Vivaldi";
+  font-size: 40px;
+  color: #B76E79;
+  padding: 0px 0px 0px 70px;
+  margin: 0px;
+}
+
+/* Tags portfolio */
+h1.big {
+  padding-top: 20px;
+  font-size: 75px;
+}
+
+video {
+  padding: 20px 20px 20px 70px;
+  margin: 0px;
+}
+
+div.video {
+  float: left;
+  margin: 0px;
+}
+
+/* Social Media Buttons */
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #ae9287;
+}
+
+.phone {
+  background: #89ae85;
+  color: white;
+}
+
+.email {
+  background: #d4554c;
+  color: white;
+}
+
+.linkedin {
+  background: #0688bc;
+  color: white;
+}
