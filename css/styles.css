@@ -2,7 +2,7 @@
 /* CSS NAV MENU */
 
 body {
-    background-image: url("../images/achtergrond.png");
+
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -92,14 +92,16 @@ p {
 /* Mobiel, schergrootte 1 */
 @media only screen and (max-width: 619px) {
   body {
-    font-size: 12px;
+    font-size: 7px;
+    background-color: red;
   }
 
 
 }
 
-/* Ipad, schergrootte 2 */
-@media only screen and (min-width: 620px) and (max-width: 999px) {
+@media only screen and (min-width: px) and (max-width: 739px) {
+}
+@media only screen and (min-width: 740px) and (max-width: 999px) {
   body {
     font-size: 16px;
   }
@@ -172,32 +174,32 @@ p {
   .grid-item-foto {grid-area: foto;}
   .grid-item-fotos {
     grid-area: fotos;
-    padding-top: 70px;
+    padding-top: 50px;
   }
   .grid-item-ben {grid-area: ben;}
   .grid-item-video {
     grid-area: video;
-    padding-top: 70px;
+    padding-top: 50px;
   }
   .grid-item-kwf {grid-area: kwf;}
   .grid-item-kwfproject {
     grid-area: kwfproject;
-    padding-top: 70px;
+    padding-top: 50px;
   }
   .grid-item-boodschapp {grid-area: boodschapp;}
   .grid-item-boodschapapp {
     grid-area: boodschapapp;
-    padding-top: 70px;
+    padding-top: 50px;
   }
   .grid-item-puberbrein {grid-area: puberbrein;}
   .grid-item-puber {
     grid-area: puber;
-    padding-top: 70px;
+    padding-top: 50px;
   }
   .grid-item-zoetermeer {grid-area: zoetermeer;}
   .grid-item-vitaal {
     grid-area: vitaal;
-    padding-top: 70px;
+    padding-top: 50px;
   }
 
   .grid-container-portfolio {
@@ -223,23 +225,12 @@ p {
   .bril {
     height: 100px;
   }
-  .fotografie {
-    height: 100px;
-  }
-  .video {  /* Ben project */
-    height: 200px;
-  }
-  .kwf {
+  .fotografie, .video, .kwf, .puber, .zoetermeer {
     width: 400px;
   }
   .boodschap {
-    height: 300px;
-  }
-  .puber {
-    width: 400px;
-  }
-  .zoetermeer{
-    height: 200px;
+    height: 350px;
+    padding-top: 70px;
   }
 
   /* images over */
@@ -280,13 +271,13 @@ p {
   div.space {
     margin: 0px auto;
     padding: 20px 55px;
-    max-width: 1150px;
+    max-width: 1100px;
   }
 
   /* Grid items index */
   .grid-container-index {
     display: grid;
-    max-width: 1150px;
+    max-width: 1100px;
     padding: 20px 55px;
     margin: 0px auto;
     grid-template-areas: 
@@ -307,17 +298,13 @@ p {
 
   .skills {
     width: 300px;
+    padding-top: 50px;
   }
   .laptop {
     width: 400px;
   }
   .over {
     width: 300px;
-  }
-
-  /* Index */
-  .skills {
-    padding-top: 50px;
   }
 
   /* Grid portfolio */
@@ -336,7 +323,7 @@ p {
   .grid-item-kwf {grid-area: kwf;}
   .grid-item-kwfproject {
     grid-area: kwfproject;
-    padding-top: 70px;
+    padding-top: 50px;
   }
   .grid-item-boodschapp {grid-area: boodschapp;}
   .grid-item-boodschapapp {
@@ -374,6 +361,16 @@ p {
     display: grid;
   }
 
+  .bril {
+    width: 200px;
+  }
+  .fotografie, .video, .kwf, .puber, .zoetermeer {
+    width: 500px;
+  }
+  .boodschap {
+    height: 350px;
+    padding-top: 70px;
+  }
   /* images over */
   .about {
     padding-left: 50px;
