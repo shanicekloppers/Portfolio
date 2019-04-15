@@ -99,12 +99,157 @@ p {
 }
 
 /* Ipad, schergrootte 2 */
-@media only screen and (min-width: 620px) and (max-width: 1019px) {
+@media only screen and (min-width: 620px) and (max-width: 999px) {
+  body {
+    font-size: 16px;
+  }
 
+  h1 {
+  font-family: "Vivaldi";
+  font-size: 40px;
+  color: #7b5459;
+  margin: 0px;
+  }
+
+  h1.titel {
+    font-family: "Vivaldi";
+    font-size: 40px;
+    color: #7b5459;
+    padding-top: 40px;
+  }
+
+  h2 {
+    font-family: "Vivaldi";
+    font-size: 30px;
+    color: #B76E79;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  /* Div gecentreerde pagina, skills en over */
+  div.space {
+    margin: 0px auto;
+    padding: 20px 55px;
+    max-width: 900px;
+  }
+
+  /* Grid items index */
+  .grid-container-index {
+    display: grid;
+    max-width: 900px;
+    padding: 20px 55px;
+    margin: 0px auto;
+    grid-template-areas: 
+    'skills portfolio over';
+  }
+
+  .grid-item-skills {grid-area: skills;}
+  .grid-item-portfolio {grid-area: portfolio;}
+  .grid-item-over {grid-area: over;}
+
+  .grid-item-index img:hover {
+      -webkit-filter: 
+              drop-shadow(2px 2px 0 white)
+              drop-shadow(-2px -2px 0 white);
+      filter: drop-shadow(2px 2px 0 white) 
+              drop-shadow(-2px -2px 0 white);
+  }
+
+  .skills {
+    width: 300px;
+    padding-top: 50px;
+  }
+  .laptop {
+    width: 400px;
+  }
+  .over {
+    width: 300px;
+  }
+
+  /* Grid portfolio */
+  .grid-item-bril {grid-area: bril;}
+  .grid-item-intro {grid-area: intro;}
+  .grid-item-foto {grid-area: foto;}
+  .grid-item-fotos {
+    grid-area: fotos;
+    padding-top: 70px;
+  }
+  .grid-item-ben {grid-area: ben;}
+  .grid-item-video {
+    grid-area: video;
+    padding-top: 70px;
+  }
+  .grid-item-kwf {grid-area: kwf;}
+  .grid-item-kwfproject {
+    grid-area: kwfproject;
+    padding-top: 70px;
+  }
+  .grid-item-boodschapp {grid-area: boodschapp;}
+  .grid-item-boodschapapp {
+    grid-area: boodschapapp;
+    padding-top: 70px;
+  }
+  .grid-item-puberbrein {grid-area: puberbrein;}
+  .grid-item-puber {
+    grid-area: puber;
+    padding-top: 70px;
+  }
+  .grid-item-zoetermeer {grid-area: zoetermeer;}
+  .grid-item-vitaal {
+    grid-area: vitaal;
+    padding-top: 70px;
+  }
+
+  .grid-container-portfolio {
+    display: grid;
+    padding: 20px 55px;
+    margin: 0px auto;
+    grid-gap: 20px;
+    max-width: 900px;
+    grid-template-areas: 
+    'bril intro intro '
+    'foto foto fotos'
+    'ben ben video'
+    'kwf kwf kwfproject'
+    'boodschapp boodschapp boodschapapp'
+    'puberbrein puberbrein puber'
+    'zoetermeer zoetermeer vitaal';
+  }
+
+  .grid-item-portfolio {
+    display: grid;
+  }
+
+  .bril {
+    height: 100px;
+  }
+  .fotografie {
+    height: 100px;
+  }
+  .video {  /* Ben project */
+    height: 200px;
+  }
+  .kwf {
+    width: 400px;
+  }
+  .boodschap {
+    height: 300px;
+  }
+  .puber {
+    width: 400px;
+  }
+  .zoetermeer{
+    height: 200px;
+  }
+
+  /* images over */
+  .about {
+    padding-left: 50px;
+  }
 }
 
 /* Desktop, schermgrootte 3 */
-@media only screen and (min-width: 1020px) {
+@media only screen and (min-width: 1000px) {
   body {
     font-size: 18px;
   }
@@ -134,21 +279,23 @@ p {
   /* Div gecentreerde pagina, skills en over */
   div.space {
     margin: 0px auto;
+    padding: 20px 55px;
     max-width: 1150px;
   }
 
   /* Grid items index */
   .grid-container-index {
     display: grid;
-    grid-template-columns: auto auto auto;
     max-width: 1150px;
-    padding: 20px;
+    padding: 20px 55px;
     margin: 0px auto;
+    grid-template-areas: 
+    'skills portfolio over';
   }
 
-  .grid-item-index {
-    display: grid;
-  }
+  .grid-item-skills {grid-area: skills;}
+  .grid-item-portfolio {grid-area: portfolio;}
+  .grid-item-over {grid-area: over;}
 
   .grid-item-index img:hover {
       -webkit-filter: 
@@ -156,6 +303,16 @@ p {
               drop-shadow(-2px -2px 0 white);
       filter: drop-shadow(2px 2px 0 white) 
               drop-shadow(-2px -2px 0 white);
+  }
+
+  .skills {
+    width: 300px;
+  }
+  .laptop {
+    width: 400px;
+  }
+  .over {
+    width: 300px;
   }
 
   /* Index */
@@ -199,7 +356,7 @@ p {
 
   .grid-container-portfolio {
     display: grid;
-    padding: 20px 0px;
+    padding: 20px 55px;
     margin: 0px auto;
     grid-gap: 20px;
     max-width: 1100px;
