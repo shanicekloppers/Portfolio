@@ -90,7 +90,7 @@ p {
 /* Responsiveness */
 
 /* Mobiel, schergrootte 1 */
-@media only screen and (max-width: 619px) {
+@media only screen and (max-width: 480px) {
   body {
     font-size: 7px;
     background-color: red;
@@ -99,8 +99,12 @@ p {
 
 }
 
-@media only screen and (min-width: 620px) and (max-width: 739px) {
+@media only screen and (min-width: 481px) and (max-width: 739px) {
+  body {
+    background-color: yellow;
+  }
 }
+
 @media only screen and (min-width: 740px) and (max-width: 999px) {
   body {
     font-size: 16px;
