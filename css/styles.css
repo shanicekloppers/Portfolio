@@ -178,17 +178,14 @@ p {
   .grid-item-foto {grid-area: foto;}
   .grid-item-fotos {
     grid-area: fotos;
-    padding-top: 10px;
   }
   .grid-item-ben {grid-area: ben;}
   .grid-item-video {
     grid-area: video;
-    padding-top: 10px;
   }
   .grid-item-kwf {grid-area: kwf;}
   .grid-item-kwfproject {
     grid-area: kwfproject;
-    padding-top: 10px;
   }
   .grid-item-boodschapp {grid-area: boodschapp;}
   .grid-item-boodschapapp {
