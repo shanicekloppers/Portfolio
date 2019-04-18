@@ -135,7 +135,7 @@ p {
       /* Div gecentreerde pagina, skills en over */
       div.space {
         margin: 0px auto;
-        padding: 20px 55px;
+        padding: 20px 25px 10px 60px;
         max-width: 90%;
       }
 
@@ -292,7 +292,7 @@ p {
       /* Div gecentreerde pagina, skills en over */
       div.space {
         margin: 0px auto;
-        padding: 20px 55px;
+        padding: 20px 25px 10px 60px;
         max-width: 90%;
       }
 
@@ -418,11 +418,13 @@ p {
   /* Skills */
   img.art {
     width: 50%;
+    max-width: 350px;
   }
   /* Over */
   .about {
     padding-left: 25px;
     width: 50%;
+    max-width: 300px
   }
 
      /* Menubalk */
@@ -449,7 +451,7 @@ p {
       /* Div gecentreerde pagina, skills en over */
       div.space {
         margin: 0px auto;
-        padding: 20px 55px;
+        padding: 20px 25px 10px 60px;
         max-width: 90%;
       }
 
@@ -546,7 +548,7 @@ p {
 /* Schermgrootte 4 */
 @media only screen and (min-width: 1000px) {
   body {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   audio {
@@ -583,7 +585,7 @@ p {
   /* Over */
   .about {
     padding-left: 25px;
-    width: 350px;
+    width: 300px;
   }
 
      /* Menubalk */
@@ -610,7 +612,7 @@ p {
       /* Div gecentreerde pagina, skills en over */
       div.space {
         margin: 0px auto;
-        padding: 20px 55px;
+        padding: 20px 25px 10px 60px;
         max-width: 90%;
       }
 
