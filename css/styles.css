@@ -1,18 +1,17 @@
 
-/* Menubalk */
-.logo {
-    background-color: none;
-    padding-left: 20px;
-    display: inline;
-}
+/* Algemeen */
 
-header {
-    height: 55px;
-    width: 100%;
-    padding: 0px;
-    margin-top: 0px;
-    position: static;
-    background-color: white;
+body {
+  background-image: url("../images/achtergrond.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Axure Handwriting";
+  text-align: left;
+  color: #676767;
+  padding: 0px;
+  margin: 0px;
+  max-height: 100%;
 }
 
 /* Tags Algemeen*/
@@ -73,16 +72,6 @@ p {
 @media only screen and (max-width: 480px) {
   body {
     font-size: 12px;
-    background-image: url("../images/achtergrond.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: "Axure Handwriting";
-    text-align: left;
-    color: #676767;
-    padding: 0px;
-    margin: 0px;
-    max-height: 100%;
   }
 
   audio {
@@ -112,119 +101,127 @@ p {
     margin: 0px;
   }
 
-  /* Div gecentreerde pagina, skills en over */
-  div.space {
-    margin: 0px auto;
-    padding: 20px 55px;
-    max-width: 90%;
-  }
-
-  /* Grid items index */
-  .grid-container-index {
-    display: grid;
-    max-width: 100%;
-    max-height: 100%;
-    padding: 20px 55px;
-    margin: 0px auto;
-    grid-template-areas: 
-    'skills skills portfolio portfolio portfolio over over';
-  }
-
-  .grid-item-skills {grid-area: skills;}
-  .grid-item-portfolio {grid-area: portfolio;}
-  .grid-item-over {grid-area: over;}
-
-  .grid-item-skills:hover, .grid-item-portfolio:hover, .grid-item-over:hover {
-      -webkit-filter: 
-              drop-shadow(2px 2px 0 white)
-              drop-shadow(-2px -2px 0 white);
-      filter: drop-shadow(2px 2px 0 white) 
-              drop-shadow(-2px -2px 0 white);
-  }
-
-  .skills {
-    width: 100%;
-    text-align: right;
-    padding-top: 40px;
-  }
-  .laptop {
-    width: 98%;
-  }
-  .over {
-    width: 100%;
-  }
-
-  /* Grid portfolio */
-  .grid-item-bril {grid-area: bril;}
-  .grid-item-intro {grid-area: intro;}
-  .grid-item-foto {grid-area: foto;}
-  .grid-item-fotos {grid-area: fotos;}
-  .grid-item-ben {grid-area: ben;}
-  .grid-item-video {grid-area: video;}
-  .grid-item-kwf {grid-area: kwf;}
-  .grid-item-kwfproject {grid-area: kwfproject;}
-  .grid-item-boodschapp {grid-area: boodschapp;}
-  .grid-item-boodschapapp {grid-area: boodschapapp;}
-  .grid-item-puberbrein {grid-area: puberbrein;}
-  .grid-item-puber {grid-area: puber;}
-  .grid-item-zoetermeer {grid-area: zoetermeer;}
-  .grid-item-vitaal {grid-area: vitaal;}
-
-  .grid-container-portfolio {
-    display: grid;
-    padding: 20px 55px;
-    margin: 0px auto;
-    grid-gap: 20px;
-    max-width: 90%;
-    grid-template-areas: 
-    'bril intro intro '
-    'foto foto foto'
-    'fotos fotos fotos'
-    'ben ben ben'
-    'video video video'
-    'kwf kwf kwf'
-    'kwfproject kwfproject kwfproject'
-    'boodschapp boodschapp boodschapp'
-    'boodschapapp boodschapapp boodschapapp'
-    'puberbrein puberbrein puberbrein'
-    'puber puber puber'
-    'zoetermeer zoetermeer zoetermeer'
-    'vitaal vitaal vitaal';
-  }
-
-  .bril {
-    height: 50px;
-  }
-  .fotografie, .video, .kwf, .puber, .zoetermeer {
-    max-height: 150px;
-    max-width: 250px
-  }
-  .boodschap {
-    max-height: 150px;
-    padding-top: 5px;
-  }
-
-  /* images over */
   .about {
     padding-left: 25px;
   }
 
+    /* Menubalk */
+    .logo {
+      background-color: none;
+      padding-left: 20px;
+      height: 35px;
+    }
+
+    .logo img {
+      height: 35px;
+    }
+
+    header {
+      height: 35px;
+      width: 100%;
+      padding: 0px;
+      margin-top: 0px;
+      position: static;
+      background-color: white;
+    }
+
+      /* Div gecentreerde pagina, skills en over */
+      div.space {
+        margin: 0px auto;
+        padding: 20px 55px;
+        max-width: 90%;
+      }
+
+        /* Grid Index */
+        .grid-container-index {
+          display: grid;
+          max-width: 100%;
+          max-height: 100%;
+          padding: 20px 55px;
+          margin: 0px auto;
+          grid-template-areas: 
+          'skills skills portfolio portfolio portfolio over over';
+        }
+
+        .grid-item-skills {grid-area: skills;}
+        .grid-item-portfolio {grid-area: portfolio;}
+        .grid-item-over {grid-area: over;}
+
+        .grid-item-skills:hover, .grid-item-portfolio:hover, .grid-item-over:hover {
+            -webkit-filter: 
+                    drop-shadow(2px 2px 0 white)
+                    drop-shadow(-2px -2px 0 white);
+            filter: drop-shadow(2px 2px 0 white) 
+                    drop-shadow(-2px -2px 0 white);
+        }
+
+        .skills {
+          width: 100%;
+          text-align: right;
+          padding-top: 40px;
+        }
+        .laptop {
+          width: 98%;
+        }
+        .over {
+          width: 100%;
+        }
+
+          /* Grid portfolio */
+          .grid-item-bril {grid-area: bril;}
+          .grid-item-intro {grid-area: intro;}
+          .grid-item-foto {grid-area: foto;}
+          .grid-item-fotos {grid-area: fotos;}
+          .grid-item-ben {grid-area: ben;}
+          .grid-item-video {grid-area: video;}
+          .grid-item-kwf {grid-area: kwf;}
+          .grid-item-kwfproject {grid-area: kwfproject;}
+          .grid-item-boodschapp {grid-area: boodschapp;}
+          .grid-item-boodschapapp {grid-area: boodschapapp;}
+          .grid-item-puberbrein {grid-area: puberbrein;}
+          .grid-item-puber {grid-area: puber;}
+          .grid-item-zoetermeer {grid-area: zoetermeer;}
+          .grid-item-vitaal {grid-area: vitaal;}
+
+          .grid-container-portfolio {
+            display: grid;
+            padding: 20px 55px;
+            margin: 0px auto;
+            grid-gap: 20px;
+            max-width: 90%;
+            grid-template-areas: 
+            'bril intro intro '
+            'foto foto foto'
+            'fotos fotos fotos'
+            'ben ben ben'
+            'video video video'
+            'kwf kwf kwf'
+            'kwfproject kwfproject kwfproject'
+            'boodschapp boodschapp boodschapp'
+            'boodschapapp boodschapapp boodschapapp'
+            'puberbrein puberbrein puberbrein'
+            'puber puber puber'
+            'zoetermeer zoetermeer zoetermeer'
+            'vitaal vitaal vitaal';
+          }
+
+          .bril {
+            height: 50px;
+          }
+          .fotografie, .video, .kwf, .puber, .zoetermeer {
+            max-height: 150px;
+            max-width: 250px
+          }
+          .boodschap {
+            max-height: 150px;
+            padding-top: 5px;
+          }
 }
 
 /* Schermgrootte 2 */
 @media only screen and (min-width: 481px) and (max-width: 739px) {
   body {
     font-size: 14px;
-    background-image: url("../images/achtergrond.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: "Axure Handwriting";
-    text-align: left;
-    color: #676767;
-    padding: 0px;
-    margin: 0px;
-    max-height: 100%;
   }
 
   audio {
@@ -254,118 +251,127 @@ p {
     margin: 0px;
   }
 
-  /* Div gecentreerde pagina, skills en over */
-  div.space {
-    margin: 0px auto;
-    padding: 20px 55px;
-    max-width: 90%;
-  }
-
-  /* Grid items index */
-  .grid-container-index {
-    display: grid;
-    max-width: 100%;
-    max-height: 100%;
-    padding: 20px 55px;
-    margin: 0px auto;
-    grid-template-areas: 
-    'skills skills portfolio portfolio portfolio over over';
-  }
-
-  .grid-item-skills {grid-area: skills;}
-  .grid-item-portfolio {grid-area: portfolio;}
-  .grid-item-over {grid-area: over;}
-
-  .grid-item-skills:hover, .grid-item-portfolio:hover, .grid-item-over:hover {
-      -webkit-filter: 
-              drop-shadow(2px 2px 0 white)
-              drop-shadow(-2px -2px 0 white);
-      filter: drop-shadow(2px 2px 0 white) 
-              drop-shadow(-2px -2px 0 white);
-  }
-
-  .skills {
-    width: 100%;
-    text-align: right;
-    padding-top: 40px;
-  }
-  .laptop {
-    width: 98%;
-  }
-  .over {
-    width: 100%;
-  }
-
-  /* Grid portfolio */
-  .grid-item-bril {grid-area: bril;}
-  .grid-item-intro {grid-area: intro;}
-  .grid-item-foto {grid-area: foto;}
-  .grid-item-fotos {grid-area: fotos;}
-  .grid-item-ben {grid-area: ben;}
-  .grid-item-video {grid-area: video;}
-  .grid-item-kwf {grid-area: kwf;}
-  .grid-item-kwfproject {grid-area: kwfproject;}
-  .grid-item-boodschapp {grid-area: boodschapp;}
-  .grid-item-boodschapapp {grid-area: boodschapapp;}
-  .grid-item-puberbrein {grid-area: puberbrein;}
-  .grid-item-puber {grid-area: puber;}
-  .grid-item-zoetermeer {grid-area: zoetermeer;}
-  .grid-item-vitaal {grid-area: vitaal;}
-
-  .grid-container-portfolio {
-    display: grid;
-    padding: 20px 55px;
-    margin: 0px auto;
-    grid-gap: 20px;
-    max-width: 90%;
-    grid-template-areas: 
-    'bril intro intro '
-    'foto foto foto'
-    'fotos fotos fotos'
-    'ben ben ben'
-    'video video video'
-    'kwf kwf kwf'
-    'kwfproject kwfproject kwfproject'
-    'boodschapp boodschapp boodschapp'
-    'boodschapapp boodschapapp boodschapapp'
-    'puberbrein puberbrein puberbrein'
-    'puber puber puber'
-    'zoetermeer zoetermeer zoetermeer'
-    'vitaal vitaal vitaal';
-  }
-
-  .bril {
-    height: 100px;
-  }
-  .fotografie, .video, .kwf, .puber, .zoetermeer {
-    max-height: 300px;
-    max-width: 500px
-  }
-  .boodschap {
-    max-height: 300px;
-    padding-top: 10px;
-  }
-
-  /* images over */
   .about {
     padding-left: 50px;
   }
+
+     /* Menubalk */
+    .logo {
+      background-color: none;
+      padding-left: 20px;
+      height: 35px;
+    }
+
+    .logo img {
+      height: 35px;
+    }
+
+    header {
+      height: 35px;
+      width: 100%;
+      padding: 0px;
+      margin-top: 0px;
+      position: static;
+      background-color: white;
+    }
+
+      /* Div gecentreerde pagina, skills en over */
+      div.space {
+        margin: 0px auto;
+        padding: 20px 55px;
+        max-width: 90%;
+      }
+
+        /* Grid items index */
+        .grid-container-index {
+          display: grid;
+          max-width: 100%;
+          max-height: 100%;
+          padding: 20px 55px;
+          margin: 0px auto;
+          grid-template-areas: 
+          'skills skills portfolio portfolio portfolio over over';
+        }
+
+        .grid-item-skills {grid-area: skills;}
+        .grid-item-portfolio {grid-area: portfolio;}
+        .grid-item-over {grid-area: over;}
+
+        .grid-item-skills:hover, .grid-item-portfolio:hover, .grid-item-over:hover {
+            -webkit-filter: 
+                    drop-shadow(2px 2px 0 white)
+                    drop-shadow(-2px -2px 0 white);
+            filter: drop-shadow(2px 2px 0 white) 
+                    drop-shadow(-2px -2px 0 white);
+        }
+
+        .skills {
+          width: 100%;
+          text-align: right;
+          padding-top: 40px;
+        }
+        .laptop {
+          width: 98%;
+        }
+        .over {
+          width: 100%;
+        }
+
+        /* Grid portfolio */
+        .grid-item-bril {grid-area: bril;}
+        .grid-item-intro {grid-area: intro;}
+        .grid-item-foto {grid-area: foto;}
+        .grid-item-fotos {grid-area: fotos;}
+        .grid-item-ben {grid-area: ben;}
+        .grid-item-video {grid-area: video;}
+        .grid-item-kwf {grid-area: kwf;}
+        .grid-item-kwfproject {grid-area: kwfproject;}
+        .grid-item-boodschapp {grid-area: boodschapp;}
+        .grid-item-boodschapapp {grid-area: boodschapapp;}
+        .grid-item-puberbrein {grid-area: puberbrein;}
+        .grid-item-puber {grid-area: puber;}
+        .grid-item-zoetermeer {grid-area: zoetermeer;}
+        .grid-item-vitaal {grid-area: vitaal;}
+
+        .grid-container-portfolio {
+          display: grid;
+          padding: 20px 55px;
+          margin: 0px auto;
+          grid-gap: 20px;
+          max-width: 90%;
+          grid-template-areas: 
+          'bril intro intro '
+          'foto foto foto'
+          'fotos fotos fotos'
+          'ben ben ben'
+          'video video video'
+          'kwf kwf kwf'
+          'kwfproject kwfproject kwfproject'
+          'boodschapp boodschapp boodschapp'
+          'boodschapapp boodschapapp boodschapapp'
+          'puberbrein puberbrein puberbrein'
+          'puber puber puber'
+          'zoetermeer zoetermeer zoetermeer'
+          'vitaal vitaal vitaal';
+        }
+
+        .bril {
+          height: 100px;
+        }
+        .fotografie, .video, .kwf, .puber, .zoetermeer {
+          max-height: 300px;
+          max-width: 500px
+        }
+        .boodschap {
+          max-height: 300px;
+          padding-top: 10px;
+        }
 }
 
 /* Schermgrootte 3 */
 @media only screen and (min-width: 740px) and (max-width: 999px) {
   body {
     font-size: 16px;
-    background-image: url("../images/achtergrond.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: "Axure Handwriting";
-    text-align: left;
-    color: #676767;
-    padding: 0px;
-    margin: 0px;
-    max-height: 100%;
   }
 
   audio {
@@ -394,122 +400,132 @@ p {
     margin: 0px;
   }
 
-  /* Div gecentreerde pagina, skills en over */
-  div.space {
-    margin: 0px auto;
-    padding: 20px 55px;
-    max-width: 90%;
-  }
-
-  /* Grid items index */
-  .grid-container-index {
-    display: grid;
-    max-width: 100%;
-    max-height: 100%;
-    padding: 20px 55px;
-    margin: 0px auto;
-    grid-template-areas: 
-    'skills skills portfolio portfolio portfolio over over';
-  }
-
-  .grid-item-skills {grid-area: skills;}
-  .grid-item-portfolio {grid-area: portfolio;}
-  .grid-item-over {grid-area: over;}
-
-  .grid-item-skills:hover, .grid-item-portfolio:hover, .grid-item-over:hover {
-      -webkit-filter: 
-              drop-shadow(2px 2px 0 white)
-              drop-shadow(-2px -2px 0 white);
-      filter: drop-shadow(2px 2px 0 white) 
-              drop-shadow(-2px -2px 0 white);
-  }
-
-  .skills {
-    width: 100%;
-    text-align: right;
-    padding-top: 50px;
-  }
-  .laptop {
-    width: 98%;
-  }
-  .over {
-    width: 100%;
-  }
-
-  /* Grid portfolio */
-  .grid-item-bril {grid-area: bril;}
-  .grid-item-intro {grid-area: intro;}
-  .grid-item-foto {grid-area: foto;}
-  .grid-item-fotos {grid-area: fotos;}
-  .grid-item-ben {grid-area: ben;}
-  .grid-item-video {grid-area: video;}
-  .grid-item-kwf {grid-area: kwf;}
-  .grid-item-kwfproject {grid-area: kwfproject;}
-  .grid-item-boodschapp {grid-area: boodschapp;}
-  .grid-item-boodschapapp {grid-area: boodschapapp;}
-  .grid-item-puberbrein {grid-area: puberbrein;}
-  .grid-item-puber {grid-area: puber;}
-  .grid-item-zoetermeer {grid-area: zoetermeer;}
-  .grid-item-vitaal {grid-area: vitaal;}
-
-  .grid-container-portfolio {
-    display: grid;
-    padding: 20px 55px;
-    margin: 0px auto;
-    grid-gap: 20px;
-    max-width: 90%;
-    grid-template-areas: 
-    'bril intro intro '
-    'foto foto foto'
-    'fotos fotos fotos'
-    'ben ben ben'
-    'video video video'
-    'kwf kwf kwf'
-    'kwfproject kwfproject kwfproject'
-    'boodschapp boodschapp boodschapp'
-    'boodschapapp boodschapapp boodschapapp'
-    'puberbrein puberbrein puberbrein'
-    'puber puber puber'
-    'zoetermeer zoetermeer zoetermeer'
-    'vitaal vitaal vitaal';
-  }
-
-  .grid-item-portfolio {
-    display: grid;
-  }
-
-  .bril {
-    height: 100px;
-  }
-  .fotografie, .video, .kwf, .puber, .zoetermeer {
-    max-height: 300px;
-    max-width: 500px
-  }
-  .boodschap {
-    max-height: 300px;
-    padding-top: 10px;
-  }
-
-  /* images over */
   .about {
     padding-left: 50px;
   }
+
+     /* Menubalk */
+    .logo {
+      background-color: none;
+      padding-left: 20px;
+      display: inline;
+      height: 55px;
+    }
+
+    .logo img {
+      height: 55px;
+    }
+
+    header {
+      height: 55px;
+      width: 100%;
+      padding: 0px;
+      margin-top: 0px;
+      position: static;
+      background-color: white;
+    }
+
+      /* Div gecentreerde pagina, skills en over */
+      div.space {
+        margin: 0px auto;
+        padding: 20px 55px;
+        max-width: 90%;
+      }
+
+        /* Grid items index */
+        .grid-container-index {
+          display: grid;
+          max-width: 100%;
+          max-height: 100%;
+          padding: 20px 55px;
+          margin: 0px auto;
+          grid-template-areas: 
+          'skills skills portfolio portfolio portfolio over over';
+        }
+
+        .grid-item-skills {grid-area: skills;}
+        .grid-item-portfolio {grid-area: portfolio;}
+        .grid-item-over {grid-area: over;}
+
+        .grid-item-skills:hover, .grid-item-portfolio:hover, .grid-item-over:hover {
+            -webkit-filter: 
+                    drop-shadow(2px 2px 0 white)
+                    drop-shadow(-2px -2px 0 white);
+            filter: drop-shadow(2px 2px 0 white) 
+                    drop-shadow(-2px -2px 0 white);
+        }
+
+        .skills {
+          width: 100%;
+          text-align: right;
+          padding-top: 50px;
+        }
+        .laptop {
+          width: 98%;
+        }
+        .over {
+          width: 100%;
+        }
+
+          /* Grid portfolio */
+          .grid-item-bril {grid-area: bril;}
+          .grid-item-intro {grid-area: intro;}
+          .grid-item-foto {grid-area: foto;}
+          .grid-item-fotos {grid-area: fotos;}
+          .grid-item-ben {grid-area: ben;}
+          .grid-item-video {grid-area: video;}
+          .grid-item-kwf {grid-area: kwf;}
+          .grid-item-kwfproject {grid-area: kwfproject;}
+          .grid-item-boodschapp {grid-area: boodschapp;}
+          .grid-item-boodschapapp {grid-area: boodschapapp;}
+          .grid-item-puberbrein {grid-area: puberbrein;}
+          .grid-item-puber {grid-area: puber;}
+          .grid-item-zoetermeer {grid-area: zoetermeer;}
+          .grid-item-vitaal {grid-area: vitaal;}
+
+          .grid-container-portfolio {
+            display: grid;
+            padding: 20px 55px;
+            margin: 0px auto;
+            grid-gap: 20px;
+            max-width: 90%;
+            grid-template-areas: 
+            'bril intro intro '
+            'foto foto foto'
+            'fotos fotos fotos'
+            'ben ben ben'
+            'video video video'
+            'kwf kwf kwf'
+            'kwfproject kwfproject kwfproject'
+            'boodschapp boodschapp boodschapp'
+            'boodschapapp boodschapapp boodschapapp'
+            'puberbrein puberbrein puberbrein'
+            'puber puber puber'
+            'zoetermeer zoetermeer zoetermeer'
+            'vitaal vitaal vitaal';
+          }
+
+          .grid-item-portfolio {
+            display: grid;
+          }
+
+          .bril {
+            height: 100px;
+          }
+          .fotografie, .video, .kwf, .puber, .zoetermeer {
+            max-height: 300px;
+            max-width: 500px
+          }
+          .boodschap {
+            max-height: 300px;
+            padding-top: 10px;
+          }
 }
 
 /* Schermgrootte 4 */
 @media only screen and (min-width: 1000px) {
   body {
     font-size: 18px;
-    background-image: url("../images/achtergrond.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: "Axure Handwriting";
-    text-align: left;
-    color: #676767;
-    padding: 0px;
-    margin: 0px;
-    max-height: 100%;
   }
 
   audio {
@@ -538,113 +554,138 @@ p {
     margin: 0px;
   }
 
-  /* Div gecentreerde pagina, skills en over */
-  div.space {
-    margin: 0px auto;
-    padding: 20px 55px;
-    max-width: 90%;
-  }
-
-  /* Grid items index */
-  .grid-container-index {
-    display: grid;
-    max-width: 100%;
-    max-height: 100%;
-    padding: 20px 55px;
-    margin: 0px auto;
-    grid-template-areas: 
-    'skills skills portfolio portfolio portfolio over over';
-  }
-
-  .grid-item-skills {grid-area: skills;}
-  .grid-item-portfolio {grid-area: portfolio;}
-  .grid-item-over {grid-area: over;}
-
-  .grid-item-skills:hover, .grid-item-portfolio:hover, .grid-item-over:hover {
-      -webkit-filter: 
-              drop-shadow(2px 2px 0 white)
-              drop-shadow(-2px -2px 0 white);
-      filter: drop-shadow(2px 2px 0 white) 
-              drop-shadow(-2px -2px 0 white);
-  }
-
-  .skills {
-    width: 100%;
-    padding-top: 50px;
-  }
-  .laptop {
-    width: 98%;
-  }
-  .over {
-    width: 100%;
-  }
-
-  /* Grid portfolio */
-  .grid-item-bril {grid-area: bril;}
-  .grid-item-intro {grid-area: intro;}
-  .grid-item-foto {grid-area: foto;}
-  .grid-item-fotos {
-    grid-area: fotos;
-    padding-top: 70px;
-  }
-  .grid-item-ben {grid-area: ben;}
-  .grid-item-video {
-    grid-area: video;
-    padding-top: 70px;
-  }
-  .grid-item-kwf {grid-area: kwf;}
-  .grid-item-kwfproject {
-    grid-area: kwfproject;
-    padding-top: 50px;
-  }
-  .grid-item-boodschapp {grid-area: boodschapp;}
-  .grid-item-boodschapapp {
-    grid-area: boodschapapp;
-    padding-top: 70px;
-  }
-  .grid-item-puberbrein {grid-area: puberbrein;}
-  .grid-item-puber {
-    grid-area: puber;
-    padding-top: 70px;
-  }
-  .grid-item-zoetermeer {grid-area: zoetermeer;}
-  .grid-item-vitaal {
-    grid-area: vitaal;
-    padding-top: 70px;
-  }
-
-  .grid-container-portfolio {
-    display: grid;
-    padding: 20px 55px;
-    margin: 0px auto;
-    grid-gap: 20px;
-    max-width: 90%;
-    grid-template-areas: 
-    'bril intro intro'
-    'foto foto fotos'
-    'ben ben video'
-    'kwf kwf kwfproject'
-    'boodschapp boodschapp boodschapapp'
-    'puberbrein puberbrein puber'
-    'zoetermeer zoetermeer vitaal';
-  }
-
-  .grid-item-portfolio {
-    display: grid;
-  }
-
-  .bril {
-    width: 200px;
-  }
-  .fotografie, .video, .kwf, .puber, .zoetermeer {
-    width: 500px;
-  }
-  .boodschap {
-    height: 350px;
-    padding-top: 70px;
-  }
-  /* images over */
   .about {
     padding-left: 50px;
   }
+
+     /* Menubalk */
+    .logo {
+      background-color: none;
+      padding-left: 20px;
+      display: inline;
+      height: 55px;
+    }
+
+    .logo img {
+      height: 55px;
+    }
+
+    header {
+      height: 55px;
+      width: 100%;
+      padding: 0px;
+      margin-top: 0px;
+      position: static;
+      background-color: white;
+    }
+
+      /* Div gecentreerde pagina, skills en over */
+      div.space {
+        margin: 0px auto;
+        padding: 20px 55px;
+        max-width: 90%;
+      }
+
+        /* Grid items index */
+        .grid-container-index {
+          display: grid;
+          max-width: 100%;
+          max-height: 100%;
+          padding: 20px 55px;
+          margin: 0px auto;
+          grid-template-areas: 
+          'skills skills portfolio portfolio portfolio over over';
+        }
+
+        .grid-item-skills {grid-area: skills;}
+        .grid-item-portfolio {grid-area: portfolio;}
+        .grid-item-over {grid-area: over;}
+
+        .grid-item-skills:hover, .grid-item-portfolio:hover, .grid-item-over:hover {
+            -webkit-filter: 
+                    drop-shadow(2px 2px 0 white)
+                    drop-shadow(-2px -2px 0 white);
+            filter: drop-shadow(2px 2px 0 white) 
+                    drop-shadow(-2px -2px 0 white);
+        }
+
+        .skills {
+          width: 100%;
+          padding-top: 50px;
+        }
+        .laptop {
+          width: 98%;
+        }
+        .over {
+          width: 100%;
+        }
+
+          /* Grid portfolio */
+          .grid-item-bril {grid-area: bril;}
+          .grid-item-intro {grid-area: intro;}
+          .grid-item-foto {grid-area: foto;}
+          .grid-item-fotos {
+            grid-area: fotos;
+            padding-top: 70px;
+          }
+          .grid-item-ben {grid-area: ben;}
+          .grid-item-video {
+            grid-area: video;
+            padding-top: 70px;
+          }
+          .grid-item-kwf {grid-area: kwf;}
+          .grid-item-kwfproject {
+            grid-area: kwfproject;
+            padding-top: 50px;
+          }
+          .grid-item-boodschapp {grid-area: boodschapp;}
+          .grid-item-boodschapapp {
+            grid-area: boodschapapp;
+            padding-top: 70px;
+          }
+          .grid-item-puberbrein {grid-area: puberbrein;}
+          .grid-item-puber {
+            grid-area: puber;
+            padding-top: 70px;
+          }
+          .grid-item-zoetermeer {grid-area: zoetermeer;}
+          .grid-item-vitaal {
+            grid-area: vitaal;
+            padding-top: 70px;
+          }
+
+          .grid-container-portfolio {
+            display: grid;
+            padding: 20px 55px;
+            margin: 0px auto;
+            grid-gap: 20px;
+            max-width: 90%;
+            grid-template-areas: 
+            'bril intro intro'
+            'foto foto fotos'
+            'ben ben video'
+            'kwf kwf kwfproject'
+            'boodschapp boodschapp boodschapapp'
+            'puberbrein puberbrein puber'
+            'zoetermeer zoetermeer vitaal';
+          }
+
+          .grid-item-portfolio {
+            display: grid;
+          }
+
+          .bril {
+            width: 200px;
+          }
+          .fotografie, .video, .kwf, .puber, .zoetermeer {
+            width: 500px;
+          }
+          .boodschap {
+            height: 350px;
+            padding-top: 70px;
+          }
+          /* images over */
+          .about {
+            padding-left: 50px;
+          }
 }
