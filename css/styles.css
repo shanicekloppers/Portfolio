@@ -95,60 +95,6 @@ p {
     
   }
 
-  .pull{
-  position:absolute;
-  right:10px;
-  top:50%;
-  margin-top:-10px;
-  }
-
-  .overlay{
-    display:none;
-    position:absolute;
-    top:0;
-    background-color:rgba(0,0,0,.7);
-    width:100%;
-    height:100%;
-  }
-
-  .iconContainer{
-    width:200px;
-    height:200px;
-    position:absolute;
-    left:50%;
-    top:50%;
-    margin-left:-100px;
-    margin-top:-100px;
-    & p{
-      display:inline-block;
-      width:100%;
-      text-align:center;
-      margin:0;
-      font-size:20px;
-      opacity:0;
-    }
-  }
-
-  .phone{
-    position:relative;
-    left:50%;
-    margin-left:-50px;
-    width:0;
-    height:0;
-    border:0 solid #000;
-    background:#a9a9a9;
-    border-radius:10px;
-    box-sizing:border-box;
-    & i{
-      text-align:center;
-      width:100%;
-      line-height:120px;
-      font-size:50px;
-      color:#454545;
-      opacity:0;
-    }
-  }
-
 }
 
 @media only screen and (min-width: 481px) and (max-width: 739px) {
@@ -156,34 +102,23 @@ p {
     font-size: 12px;
   }
 
-  /* Overlay */
-  .overlay {
-    display: hidden;
-  }
-}
-
-@media only screen and (min-width: 740px) and (max-width: 999px) {
-  body {
-    font-size: 16px;
-  }
-
   h1 {
   font-family: "Vivaldi";
-  font-size: 40px;
+  font-size: 30px;
   color: #7b5459;
   margin: 0px;
   }
 
   h1.titel {
     font-family: "Vivaldi";
-    font-size: 40px;
+    font-size: 30px;
     color: #7b5459;
     padding-top: 40px;
   }
 
   h2 {
     font-family: "Vivaldi";
-    font-size: 30px;
+    font-size: 20px;
     color: #B76E79;
     padding: 0px;
     margin: 0px;
@@ -193,24 +128,25 @@ p {
   div.space {
     margin: 0px auto;
     padding: 20px 55px;
-    max-width: 900px;
+    max-width: 90%;
   }
 
   /* Grid items index */
   .grid-container-index {
     display: grid;
-    max-width: 900px;
+    max-width: 100%;
+    max-height: 100%;
     padding: 20px 55px;
     margin: 0px auto;
     grid-template-areas: 
-    'skills portfolio over';
+    'skills skills portfolio portfolio portfolio over over';
   }
 
   .grid-item-skills {grid-area: skills;}
   .grid-item-portfolio {grid-area: portfolio;}
   .grid-item-over {grid-area: over;}
 
-  .grid-item-index img:hover {
+  .grid-item-skills:hover, .grid-item-portfolio:hover, .grid-item-over:hover {
       -webkit-filter: 
               drop-shadow(2px 2px 0 white)
               drop-shadow(-2px -2px 0 white);
@@ -219,14 +155,15 @@ p {
   }
 
   .skills {
-    width: 300px;
+    width: 100%;
+    text-align: right;
     padding-top: 50px;
   }
   .laptop {
-    width: 400px;
+    width: 98%;
   }
   .over {
-    width: 300px;
+    width: 100%;
   }
 
   /* Grid portfolio */
@@ -298,11 +235,145 @@ p {
   .about {
     padding-left: 50px;
   }
+}
 
-  /* Overlay */
+@media only screen and (min-width: 740px) and (max-width: 999px) {
+  body {
+    font-size: 16px;
+  }
 
-  .overlay {
-    display: hidden;
+  h1 {
+  font-family: "Vivaldi";
+  font-size: 40px;
+  color: #7b5459;
+  margin: 0px;
+  }
+
+  h1.titel {
+    font-family: "Vivaldi";
+    font-size: 40px;
+    color: #7b5459;
+    padding-top: 40px;
+  }
+
+  h2 {
+    font-family: "Vivaldi";
+    font-size: 30px;
+    color: #B76E79;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  /* Div gecentreerde pagina, skills en over */
+  div.space {
+    margin: 0px auto;
+    padding: 20px 55px;
+    max-width: 900px;
+  }
+
+  /* Grid items index */
+  .grid-container-index {
+    display: grid;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 20px 55px;
+    margin: 0px auto;
+    grid-template-areas: 
+    'skills skills portfolio portfolio portfolio over over';
+  }
+
+  .grid-item-skills {grid-area: skills;}
+  .grid-item-portfolio {grid-area: portfolio;}
+  .grid-item-over {grid-area: over;}
+
+  .grid-item-skills:hover, .grid-item-portfolio:hover, .grid-item-over:hover {
+      -webkit-filter: 
+              drop-shadow(2px 2px 0 white)
+              drop-shadow(-2px -2px 0 white);
+      filter: drop-shadow(2px 2px 0 white) 
+              drop-shadow(-2px -2px 0 white);
+  }
+
+  .skills {
+    width: 100%;
+    text-align: right;
+    padding-top: 50px;
+  }
+  .laptop {
+    width: 98%;
+  }
+  .over {
+    width: 100%;
+  }
+
+  /* Grid portfolio */
+  .grid-item-bril {grid-area: bril;}
+  .grid-item-intro {grid-area: intro;}
+  .grid-item-foto {grid-area: foto;}
+  .grid-item-fotos {
+    grid-area: fotos;
+    padding-top: 50px;
+  }
+  .grid-item-ben {grid-area: ben;}
+  .grid-item-video {
+    grid-area: video;
+    padding-top: 50px;
+  }
+  .grid-item-kwf {grid-area: kwf;}
+  .grid-item-kwfproject {
+    grid-area: kwfproject;
+    padding-top: 50px;
+  }
+  .grid-item-boodschapp {grid-area: boodschapp;}
+  .grid-item-boodschapapp {
+    grid-area: boodschapapp;
+    padding-top: 50px;
+  }
+  .grid-item-puberbrein {grid-area: puberbrein;}
+  .grid-item-puber {
+    grid-area: puber;
+    padding-top: 50px;
+  }
+  .grid-item-zoetermeer {grid-area: zoetermeer;}
+  .grid-item-vitaal {
+    grid-area: vitaal;
+    padding-top: 50px;
+  }
+
+  .grid-container-portfolio {
+    display: grid;
+    padding: 20px 55px;
+    margin: 0px auto;
+    grid-gap: 20px;
+    max-width: 900px;
+    grid-template-areas: 
+    'bril intro intro '
+    'foto foto fotos'
+    'ben ben video'
+    'kwf kwf kwfproject'
+    'boodschapp boodschapp boodschapapp'
+    'puberbrein puberbrein puber'
+    'zoetermeer zoetermeer vitaal';
+  }
+
+  .grid-item-portfolio {
+    display: grid;
+  }
+
+  .bril {
+    height: 100px;
+  }
+  .fotografie, .video, .kwf, .puber, .zoetermeer {
+    width: 400px;
+  }
+  .boodschap {
+    height: 350px;
+    padding-top: 70px;
+  }
+
+  /* images over */
+  .about {
+    padding-left: 50px;
   }
 }
 
@@ -338,24 +409,25 @@ p {
   div.space {
     margin: 0px auto;
     padding: 20px 55px;
-    max-width: 1100px;
+    max-width: 90%;
   }
 
   /* Grid items index */
   .grid-container-index {
     display: grid;
-    max-width: 1100px;
+    max-width: 100%;
+    max-height: 100%;
     padding: 20px 55px;
     margin: 0px auto;
     grid-template-areas: 
-    'skills portfolio over';
+    'skills skills portfolio portfolio portfolio over over';
   }
 
   .grid-item-skills {grid-area: skills;}
   .grid-item-portfolio {grid-area: portfolio;}
   .grid-item-over {grid-area: over;}
 
-  .grid-item-index img:hover {
+  .grid-item-skills:hover, .grid-item-portfolio:hover, .grid-item-over:hover {
       -webkit-filter: 
               drop-shadow(2px 2px 0 white)
               drop-shadow(-2px -2px 0 white);
@@ -364,14 +436,14 @@ p {
   }
 
   .skills {
-    width: 300px;
+    width: 100%;
     padding-top: 50px;
   }
   .laptop {
-    width: 400px;
+    width: 98%;
   }
   .over {
-    width: 300px;
+    width: 100%;
   }
 
   /* Grid portfolio */
@@ -441,11 +513,5 @@ p {
   /* images over */
   .about {
     padding-left: 50px;
-  }
-
-  /* Overlay */
-
-  .overlay {
-    display: hidden;
   }
 }
