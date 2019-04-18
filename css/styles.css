@@ -176,39 +176,24 @@ p {
   .grid-item-bril {grid-area: bril;}
   .grid-item-intro {grid-area: intro;}
   .grid-item-foto {grid-area: foto;}
-  .grid-item-fotos {
-    grid-area: fotos;
-  }
+  .grid-item-fotos {grid-area: fotos;}
   .grid-item-ben {grid-area: ben;}
-  .grid-item-video {
-    grid-area: video;
-  }
+  .grid-item-video {grid-area: video;}
   .grid-item-kwf {grid-area: kwf;}
-  .grid-item-kwfproject {
-    grid-area: kwfproject;
-  }
+  .grid-item-kwfproject {grid-area: kwfproject;}
   .grid-item-boodschapp {grid-area: boodschapp;}
-  .grid-item-boodschapapp {
-    grid-area: boodschapapp;
-    padding-top: 10px;
-  }
+  .grid-item-boodschapapp {grid-area: boodschapapp;}
   .grid-item-puberbrein {grid-area: puberbrein;}
-  .grid-item-puber {
-    grid-area: puber;
-    padding-top: 10px;
-  }
+  .grid-item-puber {grid-area: puber;}
   .grid-item-zoetermeer {grid-area: zoetermeer;}
-  .grid-item-vitaal {
-    grid-area: vitaal;
-    padding-top: 10px;
-  }
+  .grid-item-vitaal {grid-area: vitaal;}
 
   .grid-container-portfolio {
     display: grid;
     padding: 20px 55px;
     margin: 0px auto;
     grid-gap: 20px;
-    max-width: 900px;
+    max-width: 90%;
     grid-template-areas: 
     'bril intro intro '
     'foto foto foto'
@@ -321,50 +306,38 @@ p {
   .grid-item-bril {grid-area: bril;}
   .grid-item-intro {grid-area: intro;}
   .grid-item-foto {grid-area: foto;}
-  .grid-item-fotos {
-    grid-area: fotos;
-    padding-top: 50px;
-  }
+  .grid-item-fotos {grid-area: fotos;}
   .grid-item-ben {grid-area: ben;}
-  .grid-item-video {
-    grid-area: video;
-    padding-top: 50px;
-  }
+  .grid-item-video {grid-area: video;}
   .grid-item-kwf {grid-area: kwf;}
-  .grid-item-kwfproject {
-    grid-area: kwfproject;
-    padding-top: 50px;
-  }
+  .grid-item-kwfproject {grid-area: kwfproject;}
   .grid-item-boodschapp {grid-area: boodschapp;}
-  .grid-item-boodschapapp {
-    grid-area: boodschapapp;
-    padding-top: 50px;
-  }
+  .grid-item-boodschapapp {grid-area: boodschapapp;}
   .grid-item-puberbrein {grid-area: puberbrein;}
-  .grid-item-puber {
-    grid-area: puber;
-    padding-top: 50px;
-  }
+  .grid-item-puber {grid-area: puber;}
   .grid-item-zoetermeer {grid-area: zoetermeer;}
-  .grid-item-vitaal {
-    grid-area: vitaal;
-    padding-top: 50px;
-  }
+  .grid-item-vitaal {grid-area: vitaal;}
 
   .grid-container-portfolio {
     display: grid;
     padding: 20px 55px;
     margin: 0px auto;
     grid-gap: 20px;
-    max-width: 900px;
+    max-width: 90%;
     grid-template-areas: 
     'bril intro intro '
-    'foto foto fotos'
-    'ben ben video'
-    'kwf kwf kwfproject'
-    'boodschapp boodschapp boodschapapp'
-    'puberbrein puberbrein puber'
-    'zoetermeer zoetermeer vitaal';
+    'foto foto foto'
+    'fotos fotos fotos'
+    'ben ben ben'
+    'video video video'
+    'kwf kwf kwf'
+    'kwfproject kwfproject kwfproject'
+    'boodschapp boodschapp boodschapp'
+    'boodschapapp boodschapapp boodschapapp'
+    'puberbrein puberbrein puberbrein'
+    'puber puber puber'
+    'zoetermeer zoetermeer zoetermeer'
+    'vitaal vitaal vitaal';
   }
 
   .grid-item-portfolio {
@@ -375,11 +348,12 @@ p {
     height: 100px;
   }
   .fotografie, .video, .kwf, .puber, .zoetermeer {
-    width: 400px;
+    max-height: 300px;
+    max-width: 500px
   }
   .boodschap {
-    height: 350px;
-    padding-top: 70px;
+    max-height: 300px;
+    padding-top: 10px;
   }
 
   /* images over */
@@ -500,7 +474,7 @@ p {
     padding: 20px 55px;
     margin: 0px auto;
     grid-gap: 20px;
-    max-width: 1100px;
+    max-width: 90%;
     grid-template-areas: 
     'bril intro intro'
     'foto foto fotos'
