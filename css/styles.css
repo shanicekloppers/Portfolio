@@ -1,741 +1,1445 @@
 
 /* Algemeen */
 html {
-  background-image: url("../images/achtergrond.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-body {
-  font-family: "Axure Handwriting";
-  text-align: left;
-  color: #676767;
-  padding: 0px;
-  margin: 0px;
-  max-height: 100%;
-}
-
-/* Tags Algemeen*/
-
-a {
-  color: #B76E79;
-  text-decoration: none;
-}
-
-a:hover {
-  color: white;
-}
-
-p {
-  color: black;
-}
-
-/* Social Media Buttons */
-
-.icon-bar {
-  position: fixed;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.icon-bar a {
-  display: block;
-  text-align: center;
-  padding: 16px;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 20px;
-}
-
-.icon-bar a:hover {
-  background-color: #ae9287;
-}
-
-.phone {
-  background: #89ae85;
-  color: white;
-}
-
-.email {
-  background: #d4554c;
-  color: white;
-}
-
-.linkedin {
-  background: #0688bc;
-  color: white;
-}
-
 /* Responsiveness */
 /* Schergrootte 1 */
 @media only screen and (max-width: 480px) {
+
   body {
-    font-size: 12px;
+    font-family: 'Questrial', sans-serif;
+    font-weight: normal;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+    max-height: 100%;
+    display: grid;
+    grid-template-areas:
+      'nav nav nav'
+      'box box illu'
+      'about about about'
+      'portfolio portfolio portfolio'
+      'contact contact contact';
+    grid-template-columns: 33% 33% 33%;
   }
 
-  audio {
-    display: hidden;
-    width: 0px;
+  a {
+    text-decoration: none;
+    color: #7b5459;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #B76E79;
+  }
+  p {
+    font-size: 12px;
+    color: #676767;
   }
 
   h1 {
-  font-family: "Vivaldi";
+  font-family: 'Questrial', sans-serif;
+  font-weight: normal;
   font-size: 25px;
   color: #7b5459;
-  margin: 0px;
-  }
-
-  h1.titel {
-    font-family: "Vivaldi";
-    font-size: 25px;
-    color: #7b5459;
-    padding-top: 40px;
+  margin: 0px 0px 10px 0px;
   }
 
   h2 {
-    font-family: "Vivaldi";
+    font-family: 'Questrial', sans-serif;
     font-size: 20px;
+    font-weight: normal;
+    text-align: center;
     color: #B76E79;
     padding: 0px;
-    margin: 0px;
+    margin: 0px 0px 20px 0px;
   }
 
-  /* Images */
-  /* Skills */
-  img.art {
-    width: 50%;
-  }
-  /* Over */
-  .about {
-    padding-left: 25px;
-    width: 50%;
-  }
-
-    /* Menubalk */
-    .logo {
-      background-color: none;
-      padding-left: 20px;
-      height: 35px;
-    }
-
-    .logo img {
-      height: 35px;
-    }
-
-    header {
-      height: 35px;
-      width: 100%;
-      padding: 0px;
-      margin-top: 0px;
-      position: static;
-      background-color: white;
-    }
-
-      /* Div gecentreerde pagina, skills en over */
-      div.space {
-        margin: 0px auto;
-        padding: 20px 25px 10px 60px;
-        max-width: 90%;
-      }
-
-        /* Grid Index */
-        .grid-container-index {
-          display: grid;
-          max-width: 100%;
-          max-height: 100%;
-          padding: 20px 55px;
-          margin: 0px auto;
-          grid-template-areas: 
-          'skills skills portfolio portfolio portfolio over over';
-        }
-
-        .grid-item-skills {grid-area: skills;}
-        .grid-item-portfolio {grid-area: portfolio;}
-        .grid-item-over {grid-area: over;}
-
-        .grid-item-skills:hover, .grid-item-portfolio:hover, .grid-item-over:hover {
-            -webkit-filter: 
-                    drop-shadow(2px 2px 0 white)
-                    drop-shadow(-2px -2px 0 white);
-            filter: drop-shadow(2px 2px 0 white) 
-                    drop-shadow(-2px -2px 0 white);
-        }
-
-        .skills {
-          width: 100%;
-          text-align: right;
-          padding-top: 40px;
-        }
-        .laptop {
-          width: 98%;
-        }
-        .over {
-          width: 100%;
-        }
-
-          /* Grid portfolio */
-          .grid-item-bril {grid-area: bril;}
-          .grid-item-intro {grid-area: intro;}
-          .grid-item-buzzzle {grid-area: buzzzle;}
-          .grid-item-buzzz {grid-area: buzzz;}
-          .grid-item-foto {grid-area: foto;}
-          .grid-item-fotos {grid-area: fotos;}
-          .grid-item-ben {grid-area: ben;}
-          .grid-item-video {grid-area: video;}
-          .grid-item-kwf {grid-area: kwf;}
-          .grid-item-kwfproject {grid-area: kwfproject;}
-          .grid-item-boodschapp {grid-area: boodschapp;}
-          .grid-item-boodschapapp {grid-area: boodschapapp;}
-          .grid-item-puberbrein {grid-area: puberbrein;}
-          .grid-item-puber {grid-area: puber;}
-          .grid-item-zoetermeer {grid-area: zoetermeer;}
-          .grid-item-vitaal {grid-area: vitaal;}
-
-          .grid-container-portfolio {
-            display: grid;
-            padding: 20px 55px;
-            margin: 0px auto;
-            grid-gap: 20px;
-            max-width: 90%;
-            grid-template-areas: 
-            'bril intro intro '
-            'foto foto foto'
-            'buzzzle buzzzle buzzzle' 
-            'buzzz buzzz buzzz'
-            'fotos fotos fotos'
-            'ben ben ben'
-            'video video video'
-            'kwf kwf kwf'
-            'kwfproject kwfproject kwfproject'
-            'boodschapp boodschapp boodschapp'
-            'boodschapapp boodschapapp boodschapapp'
-            'puberbrein puberbrein puberbrein'
-            'puber puber puber'
-            'zoetermeer zoetermeer zoetermeer'
-            'vitaal vitaal vitaal';
-          }
-
-          .bril {
-            height: 50px;
-          }
-          .buzzzle, .fotografie, .video, .kwf, .puber, .zoetermeer {
-            max-height: 150px;
-            max-width: 250px
-          }
-          .boodschap {
-            max-height: 150px;
-            padding-top: 5px;
-          }
-}
-
-/* Schermgrootte 2 */
-@media only screen and (min-width: 481px) and (max-width: 739px) {
-  body {
-    font-size: 14px;
+  /* nav */
+  #nav {
+    position: fixed;
+    background-color: #ebddd5;
+    width: 100%;
+    z-index: 10;
+    grid-area: nav;
+    box-shadow: 0px 0px 10px 0px #CABDB3;
   }
 
-  audio {
-    display: hidden;
-    width: 0px;
+  li {
+    display: inline;
+    margin-right: 50px;
   }
 
-  h1 {
-  font-family: "Vivaldi";
-  font-size: 30px;
-  color: #7b5459;
-  margin: 0px;
+  .name {
+    float: left;
   }
 
-  h1.titel {
-    font-family: "Vivaldi";
-    font-size: 30px;
-    color: #7b5459;
-    padding-top: 40px;
-  }
-
-  h2 {
-    font-family: "Vivaldi";
-    font-size: 20px;
-    color: #B76E79;
-    padding: 0px;
-    margin: 0px;
-  }
-
-  /* Images */
-  /* Skills */
-  img.art {
-    width: 50%;
-  }
-  /* Over */
-  .about {
-    padding-left: 25px;
-    width: 50%;
-  }
-
-    /* Menubalk */
-    .logo {
-      background-color: none;
-      padding-left: 20px;
-      height: 35px;
-    }
-
-    .logo img {
-      height: 35px;
-    }
-
-    header {
-      height: 35px;
-      width: 100%;
-      padding: 0px;
-      margin-top: 0px;
-      position: static;
-      background-color: white;
-    }
-
-      /* Div gecentreerde pagina, skills en over */
-      div.space {
-        margin: 0px auto;
-        padding: 20px 25px 10px 60px;
-        max-width: 90%;
-      }
-
-        /* Grid items index */
-        .grid-container-index {
-          display: grid;
-          max-width: 100%;
-          max-height: 100%;
-          padding: 20px 55px;
-          margin: 0px auto;
-          grid-template-areas: 
-          'skills skills portfolio portfolio portfolio over over';
-        }
-
-        .grid-item-skills {grid-area: skills;}
-        .grid-item-portfolio {grid-area: portfolio;}
-        .grid-item-over {grid-area: over;}
-
-        .grid-item-skills:hover, .grid-item-portfolio:hover, .grid-item-over:hover {
-            -webkit-filter: 
-                    drop-shadow(2px 2px 0 white)
-                    drop-shadow(-2px -2px 0 white);
-            filter: drop-shadow(2px 2px 0 white) 
-                    drop-shadow(-2px -2px 0 white);
-        }
-
-        .skills {
-          width: 100%;
-          text-align: right;
-          padding-top: 40px;
-        }
-        .laptop {
-          width: 98%;
-        }
-        .over {
-          width: 100%;
-        }
-
-        /* Grid portfolio */
-        .grid-item-bril {grid-area: bril;}
-        .grid-item-intro {grid-area: intro;}
-        .grid-item-buzzzle {grid-area: buzzzle;}
-        .grid-item-buzzz {grid-area: buzzz;}
-        .grid-item-foto {grid-area: foto;}
-        .grid-item-fotos {grid-area: fotos;}
-        .grid-item-ben {grid-area: ben;}
-        .grid-item-video {grid-area: video;}
-        .grid-item-kwf {grid-area: kwf;}
-        .grid-item-kwfproject {grid-area: kwfproject;}
-        .grid-item-boodschapp {grid-area: boodschapp;}
-        .grid-item-boodschapapp {grid-area: boodschapapp;}
-        .grid-item-puberbrein {grid-area: puberbrein;}
-        .grid-item-puber {grid-area: puber;}
-        .grid-item-zoetermeer {grid-area: zoetermeer;}
-        .grid-item-vitaal {grid-area: vitaal;}
-
-        .grid-container-portfolio {
-          display: grid;
-          padding: 20px 55px;
-          margin: 0px auto;
-          grid-gap: 20px;
-          max-width: 90%;
-          grid-template-areas: 
-          'bril intro intro '
-          'buzzzle buzzzle buzzzle'
-          'buzzz buzzz buzzz'
-          'foto foto foto'
-          'fotos fotos fotos'
-          'ben ben ben'
-          'video video video'
-          'kwf kwf kwf'
-          'kwfproject kwfproject kwfproject'
-          'boodschapp boodschapp boodschapp'
-          'boodschapapp boodschapapp boodschapapp'
-          'puberbrein puberbrein puberbrein'
-          'puber puber puber'
-          'zoetermeer zoetermeer zoetermeer'
-          'vitaal vitaal vitaal';
-        }
-
-        .bril {
-          height: 100px;
-        }
-        .buzzzle, .fotografie, .video, .kwf, .puber, .zoetermeer {
-          max-height: 300px;
-          max-width: 500px
-        }
-        .boodschap {
-          max-height: 300px;
-          padding-top: 10px;
-        }
-}
-
-/* Schermgrootte 3 */
-@media only screen and (min-width: 740px) and (max-width: 999px) {
-  body {
-    font-size: 16px;
-  }
-
-  audio {
+  .menu {
     float: right;
   }
 
-  h1 {
-    font-family: "Vivaldi";
-    font-size: 40px;
+  li > a {
+    text-decoration: none;
     color: #7b5459;
-    margin: 0px;
   }
 
-  h1.titel {
-    font-family: "Vivaldi";
-    font-size: 40px;
+  /* Introduction grid */
+  .box {
+    background-color: white;
+    grid-area: box;
+  }
+
+  .headertekst {
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 25%;
+  }
+
+  /* intro illustratie */
+
+  .illustration {
+    grid-area: illu;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .illustration > img {
+    height: 500px;
+    margin-top: 100px;
+    margin-bottom: -10px;
+    padding: 0px;
+  }
+
+  /* Over tekst */
+
+  #about {
+    background-color: #ebddd5;
+    height: 80%;
+    grid-area: about;
+    vertical-align: text-top;
+    padding: 100px;
+  }
+
+  img.align-left {
+    float: left;
+    margin: 0px 30px 30px 0px;
+  }
+
+  img.align-right {
+    float: right;
+    margin-left: 10px;
+  }
+
+  img.medium {
+    height: 300px;
+  }
+
+  /* portfolio */
+
+  #portfolio {
+    background-color: white;
+    height: 80%;
+    grid-area: portfolio;
+    padding: 100px;
+  }
+
+  #opdrachten {
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      'spijkkeuren illustrator fotografie'
+      'humanitas contentcanvas ben'
+      'kwf boodschap none';
+  }
+
+  .spijkkeuren {
+    grid-area: spijkkeuren;
+    background-color: #ebddd5;
+    max-width: 300px;
+    min-width: 50px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
+
+  .spijkkeuren img {
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .illustrator {
+    grid-area: illustrator;
+    background-color: #ebddd5;
+    max-width: 300px;
+    min-width: 50px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
+
+  .illustrator img {
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .fotografie {
+    grid-area: fotografie;
+    background-color: #ebddd5;
+    max-width: 300px;
+    min-width: 50px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
+
+  .fotografie img {
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .humanitas {
+    grid-area: humanitas;
+    background-color: #ebddd5;
+    max-width: 300px;
+    min-width: 50px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
+
+  .humanitas img {
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contentcanvas {
+    grid-area: contentcanvas;
+    background-color: #ebddd5;
+    max-width: 300px;
+    min-width: 50px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
+
+  .contentcanvas img {
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ben {
+    grid-area: ben;
+    background-color: #ebddd5;
+    max-width: 300px;
+    min-width: 50px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
+
+  .ben img {
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .kwf {
+    grid-area: kwf;
+    background-color: #ebddd5;
+    max-width: 300px;
+    min-width: 50px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
+
+  .kwf img {
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .boodschap {
+    grid-area: boodschap;
+    background-color: #ebddd5;
+    max-width: 300px;
+    min-width: 50px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
+
+  .boodschap img {
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .spijkkeuren:hover, .fotografie:hover, .illustrator:hover, .contentcanvas:hover, .humanitas:hover, .ben:hover, .kwf:hover, .boodschap:hover {
+    -moz-box-shadow: 0 0 10px #777777;
+    -webkit-box-shadow: 0 0 10px #777777;
+    box-shadow: 0 0 10px #777777;
+  }
+
+  /* Contact */
+
+  #contact {
+    background: #ebddd5 url("../images/mobiel.png") no-repeat;
+    background-size: 300px;
+    background-position: 50px 0px;
+    height: 100%;
+    grid-area: contact;
+  }
+
+  /* Social Media Buttons */
+
+  .icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+
+  .icon-bar a:hover {
+    background-color: #ae9287;
+  }
+
+  .phone {
+    background: #89ae85;
+    color: white;
+  }
+
+  .email {
+    background: #d4554c;
+    color: white;
+  }
+
+  .linkedin {
+    background: #0688bc;
+    color: white;
+  }
+}
+
+
+
+/* Schermgrootte 2 */
+@media only screen and (min-width: 481px) and (max-width: 739px) {
+
+  body {
+    font-family: 'Questrial', sans-serif;
+    font-weight: normal;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+    max-height: 100%;
+    display: grid;
+    grid-template-areas:
+      'nav nav nav'
+      'box box illu'
+      'about about about'
+      'portfolio portfolio portfolio'
+      'contact contact contact';
+    grid-template-columns: 33% 33% 33%;
+  }
+
+  a {
+    text-decoration: none;
     color: #7b5459;
-    padding-top: 40px;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #B76E79;
+  }
+  p {
+    font-size: 14px;
+    color: #676767;
+  }
+
+  h1 {
+  font-family: 'Questrial', sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  color: #7b5459;
+  margin: 0px 0px 10px 0px;
   }
 
   h2 {
-    font-family: "Vivaldi";
-    font-size: 30px;
+    font-family: 'Questrial', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
     color: #B76E79;
     padding: 0px;
+    margin: 0px 0px 20px 0px;
+  }
+
+  /* nav */
+  #nav {
+    position: fixed;
+    background-color: #ebddd5;
+    width: 100%;
+    z-index: 10;
+    grid-area: nav;
+    box-shadow: 0px 0px 10px 0px #CABDB3;
+  }
+
+  li {
+    display: inline;
+    margin-right: 50px;
+  }
+
+  .name {
+    float: left;
+  }
+
+  .menu {
+    float: right;
+  }
+
+  li > a {
+    text-decoration: none;
+    color: #7b5459;
+  }
+
+  /* Introduction grid */
+  .box {
+    background-color: white;
+    grid-area: box;
+  }
+
+  .headertekst {
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 25%;
+  }
+
+  /* intro illustratie */
+
+  .illustration {
+    grid-area: illu;
+    height: auto;
     margin: 0px;
+    padding: 0px;
   }
 
-  /* Images */
-  /* Skills */
-  img.art {
-    width: 50%;
-    max-width: 350px;
-  }
-  /* Over */
-  .about {
-    padding-left: 25px;
-    width: 50%;
-    max-width: 300px
+  .illustration > img {
+    height: 500px;
+    margin-top: 100px;
+    margin-bottom: -10px;
+    padding: 0px;
   }
 
-     /* Menubalk */
-    .logo {
-      background-color: none;
-      padding-left: 20px;
-      display: inline;
-      height: 55px;
-    }
+  /* Over tekst */
 
-    .logo img {
-      height: 55px;
-    }
+  #about {
+    background-color: #ebddd5;
+    height: 80%;
+    grid-area: about;
+    vertical-align: text-top;
+    padding: 100px;
+  }
 
-    header {
-      height: 55px;
-      width: 100%;
-      padding: 0px;
-      margin-top: 0px;
-      position: static;
-      background-color: white;
-    }
+  img.align-left {
+    float: left;
+    margin: 0px 30px 30px 0px;
+  }
 
-      /* Div gecentreerde pagina, skills en over */
-      div.space {
-        margin: 0px auto;
-        padding: 20px 25px 10px 60px;
-        max-width: 90%;
-      }
+  img.align-right {
+    float: right;
+    margin-left: 10px;
+  }
 
-        /* Grid items index */
-        .grid-container-index {
-          display: grid;
-          max-width: 100%;
-          max-height: 100%;
-          padding: 20px 55px;
-          margin: 0px auto;
-          grid-template-areas: 
-          'skills skills portfolio portfolio portfolio over over';
-        }
+  img.medium {
+    height: 300px;
+  }
 
-        .grid-item-skills {grid-area: skills;}
-        .grid-item-portfolio {grid-area: portfolio;}
-        .grid-item-over {grid-area: over;}
+  /* portfolio */
 
-        .grid-item-skills:hover, .grid-item-portfolio:hover, .grid-item-over:hover {
-            -webkit-filter: 
-                    drop-shadow(2px 2px 0 white)
-                    drop-shadow(-2px -2px 0 white);
-            filter: drop-shadow(2px 2px 0 white) 
-                    drop-shadow(-2px -2px 0 white);
-        }
+  #portfolio {
+    background-color: white;
+    height: 80%;
+    grid-area: portfolio;
+    padding: 100px;
+  }
 
-        .skills {
-          width: 100%;
-          text-align: right;
-          padding-top: 50px;
-        }
-        .laptop {
-          width: 98%;
-        }
-        .over {
-          width: 100%;
-        }
+  #opdrachten {
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      'spijkkeuren illustrator fotografie'
+      'humanitas contentcanvas ben'
+      'kwf boodschap none';
+  }
 
-          /* Grid portfolio */
-          .grid-item-bril {grid-area: bril;}
-          .grid-item-intro {grid-area: intro;}
-          .grid-item-buzzzle {grid-area: buzzzle;}
-          .grid-item-buzzz {grid-area: buzzz;}
-          .grid-item-foto {grid-area: foto;}
-          .grid-item-fotos {grid-area: fotos;}
-          .grid-item-ben {grid-area: ben;}
-          .grid-item-video {grid-area: video;}
-          .grid-item-kwf {grid-area: kwf;}
-          .grid-item-kwfproject {grid-area: kwfproject;}
-          .grid-item-boodschapp {grid-area: boodschapp;}
-          .grid-item-boodschapapp {grid-area: boodschapapp;}
-          .grid-item-puberbrein {grid-area: puberbrein;}
-          .grid-item-puber {grid-area: puber;}
-          .grid-item-zoetermeer {grid-area: zoetermeer;}
-          .grid-item-vitaal {grid-area: vitaal;}
+  .spijkkeuren {
+    grid-area: spijkkeuren;
+    background-color: #ebddd5;
+    max-width: 300px;
+    min-width: 50px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
 
-          .grid-container-portfolio {
-            display: grid;
-            padding: 20px 55px;
-            margin: 0px auto;
-            grid-gap: 20px;
-            max-width: 90%;
-            grid-template-areas: 
-            'bril intro intro '
-            'buzzzle buzzzle buzzzle'
-            'buzzz buzzz buzzz'
-            'foto foto foto'
-            'fotos fotos fotos'
-            'ben ben ben'
-            'video video video'
-            'kwf kwf kwf'
-            'kwfproject kwfproject kwfproject'
-            'boodschapp boodschapp boodschapp'
-            'boodschapapp boodschapapp boodschapapp'
-            'puberbrein puberbrein puberbrein'
-            'puber puber puber'
-            'zoetermeer zoetermeer zoetermeer'
-            'vitaal vitaal vitaal';
-          }
+  .spijkkeuren img {
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-          .grid-item-portfolio {
-            display: grid;
-          }
+  .illustrator {
+    grid-area: illustrator;
+    background-color: #ebddd5;
+    max-width: 300px;
+    min-width: 50px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
 
-          .bril {
-            height: 100px;
-          }
-          .buzzzle, .fotografie, .video, .kwf, .puber, .zoetermeer {
-            max-height: 300px;
-            max-width: 500px
-          }
-          .boodschap {
-            max-height: 300px;
-            padding-top: 10px;
-          }
+  .illustrator img {
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .fotografie {
+    grid-area: fotografie;
+    background-color: #ebddd5;
+    max-width: 300px;
+    min-width: 50px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
+
+  .fotografie img {
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .humanitas {
+    grid-area: humanitas;
+    background-color: #ebddd5;
+    max-width: 300px;
+    min-width: 50px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
+
+  .humanitas img {
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contentcanvas {
+    grid-area: contentcanvas;
+    background-color: #ebddd5;
+    max-width: 300px;
+    min-width: 50px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
+
+  .contentcanvas img {
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ben {
+    grid-area: ben;
+    background-color: #ebddd5;
+    max-width: 300px;
+    min-width: 50px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
+
+  .ben img {
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .kwf {
+    grid-area: kwf;
+    background-color: #ebddd5;
+    max-width: 300px;
+    min-width: 50px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
+
+  .kwf img {
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .boodschap {
+    grid-area: boodschap;
+    background-color: #ebddd5;
+    max-width: 300px;
+    min-width: 50px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
+
+  .boodschap img {
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .spijkkeuren:hover, .fotografie:hover, .illustrator:hover, .contentcanvas:hover, .humanitas:hover, .ben:hover, .kwf:hover, .boodschap:hover {
+    -moz-box-shadow: 0 0 10px #777777;
+    -webkit-box-shadow: 0 0 10px #777777;
+    box-shadow: 0 0 10px #777777;
+  }
+
+  /* Contact */
+
+  #contact {
+    background: #ebddd5 url("../images/mobiel.png") no-repeat;
+    background-size: 300px;
+    background-position: 50px 0px;
+    height: 100%;
+    grid-area: contact;
+  }
+
+  /* Social Media Buttons */
+
+  .icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+
+  .icon-bar a:hover {
+    background-color: #ae9287;
+  }
+
+  .phone {
+    background: #89ae85;
+    color: white;
+  }
+
+  .email {
+    background: #d4554c;
+    color: white;
+  }
+
+  .linkedin {
+    background: #0688bc;
+    color: white;
+  }
+}
+
+
+/* Schermgrootte 3 */
+@media only screen and (min-width: 740px) and (max-width: 999px) {
+
+  body {
+    font-family: 'Questrial', sans-serif;
+    font-weight: normal;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+    max-height: 100%;
+    display: grid;
+    grid-template-areas:
+      'nav nav nav'
+      'box box illu'
+      'about about about'
+      'portfolio portfolio portfolio'
+      'contact contact contact';
+    grid-template-columns: 33% 33% 33%;
+  }
+
+  a {
+    text-decoration: none;
+    color: #7b5459;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #B76E79;
+  }
+  p {
+    font-size: 16px;
+    color: #676767;
+  }
+
+  h1 {
+  font-family: 'Questrial', sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  color: #7b5459;
+  margin: 0px 0px 10px 0px;
+  }
+
+  h2 {
+    font-family: 'Questrial', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+    color: #B76E79;
+    padding: 0px;
+    margin: 0px 0px 20px 0px;
+  }
+
+  /* nav */
+  #nav {
+    position: fixed;
+    background-color: #ebddd5;
+    width: 100%;
+    z-index: 10;
+    grid-area: nav;
+    box-shadow: 0px 0px 10px 0px #CABDB3;
+  }
+
+  li {
+    display: inline;
+    margin-right: 50px;
+  }
+
+  .name {
+    float: left;
+  }
+
+  .menu {
+    float: right;
+  }
+
+  li > a {
+    text-decoration: none;
+    color: #7b5459;
+  }
+
+  /* Introduction grid */
+  .box {
+    background-color: white;
+    grid-area: box;
+  }
+
+  .headertekst {
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 25%;
+  }
+
+  /* intro illustratie */
+
+  .illustration {
+    grid-area: illu;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .illustration > img {
+    height: 500px;
+    margin-top: 100px;
+    margin-bottom: -10px;
+    padding: 0px;
+  }
+
+  /* Over tekst */
+
+  #about {
+    background-color: #ebddd5;
+    height: 80%;
+    grid-area: about;
+    vertical-align: text-top;
+    padding: 100px;
+  }
+
+  img.align-left {
+    float: left;
+    margin: 0px 30px 30px 0px;
+  }
+
+  img.align-right {
+    float: right;
+    margin-left: 10px;
+  }
+
+  img.medium {
+    height: 300px;
+  }
+
+  /* portfolio */
+
+  #portfolio {
+    background-color: white;
+    height: 80%;
+    grid-area: portfolio;
+    padding: 100px;
+  }
+
+  #opdrachten {
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      'spijkkeuren illustrator fotografie'
+      'humanitas contentcanvas ben'
+      'kwf boodschap none';
+  }
+
+  .spijkkeuren {
+    grid-area: spijkkeuren;
+    background-color: #ebddd5;
+    max-width: 300px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
+
+  .spijkkeuren img {
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .illustrator {
+    grid-area: illustrator;
+    background-color: #ebddd5;
+    max-width: 300px;
+    min-width: 50px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
+
+  .illustrator img {
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .fotografie {
+    grid-area: fotografie;
+    background-color: #ebddd5;
+    max-width: 300px;
+    min-width: 50px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
+
+  .fotografie img {
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .humanitas {
+    grid-area: humanitas;
+    background-color: #ebddd5;
+    max-width: 300px;
+    min-width: 50px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
+
+  .humanitas img {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contentcanvas {
+    grid-area: contentcanvas;
+    background-color: #ebddd5;
+    max-width: 300px;
+    min-width: 50px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
+
+  .contentcanvas img {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ben {
+    grid-area: ben;
+    background-color: #ebddd5;
+    max-width: 300px;
+    min-width: 50px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
+
+  .ben img {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .kwf {
+    grid-area: kwf;
+    background-color: #ebddd5;
+    max-width: 300px;
+    min-width: 50px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
+
+  .kwf img {
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .boodschap {
+    grid-area: boodschap;
+    background-color: #ebddd5;
+    max-width: 300px;
+    min-width: 50px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
+
+  .boodschap img {
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .spijkkeuren:hover, .fotografie:hover, .illustrator:hover, .contentcanvas:hover, .humanitas:hover, .ben:hover, .kwf:hover, .boodschap:hover {
+    -moz-box-shadow: 0 0 10px #777777;
+    -webkit-box-shadow: 0 0 10px #777777;
+    box-shadow: 0 0 10px #777777;
+  }
+
+  /* Contact */
+
+  #contact {
+    background: #ebddd5 url("../images/mobiel.png") no-repeat;
+    background-size: 300px;
+    background-position: 50px 0px;
+    height: 100%;
+    grid-area: contact;
+  }
+
+  /* Social Media Buttons */
+
+  .icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+
+  .icon-bar a:hover {
+    background-color: #ae9287;
+  }
+
+  .phone {
+    background: #89ae85;
+    color: white;
+  }
+
+  .email {
+    background: #d4554c;
+    color: white;
+  }
+
+  .linkedin {
+    background: #0688bc;
+    color: white;
+  }
 }
 
 /* Schermgrootte 4 */
 @media only screen and (min-width: 1000px) {
   body {
-    font-size: 16px;
+    font-family: 'Questrial', sans-serif;
+    font-weight: normal;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+    max-height: 100%;
+    display: grid;
+    grid-template-areas:
+      'nav nav nav'
+      'box box illu'
+      'about about about'
+      'portfolio portfolio portfolio'
+      'contact contact contact';
+    grid-template-rows: auto auto auto;
   }
 
-  audio {
-    float: right;
+  a {
+    text-decoration: none;
+    color: #7b5459;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #B76E79;
+  }
+  p {
+    font-size: 16px;
+    color: #676767;
   }
 
   h1 {
-  font-family: "Vivaldi";
+  font-family: 'Questrial', sans-serif;
+  font-weight: normal;
   font-size: 50px;
   color: #7b5459;
-  margin: 0px;
-  }
-
-  h1.titel {
-    font-family: "Vivaldi";
-    font-size: 50px;
-    color: #7b5459;
-    padding-top: 40px;
+  margin: 0px 0px 10px 0px;
   }
 
   h2 {
-    font-family: "Vivaldi";
+    font-family: 'Questrial', sans-serif;
     font-size: 40px;
+    font-weight: normal;
+    text-align: center;
     color: #B76E79;
     padding: 0px;
+    margin: 0px 0px 20px 0px;
+  }
+
+  /* nav */
+  #nav {
+    position: fixed;
+    background-color: #ebddd5;
+    width: 100%;
+    z-index: 10;
+    grid-area: nav;
+    box-shadow: 0px 0px 10px 0px #CABDB3;
+  }
+
+  li {
+    display: inline;
+    margin-right: 50px;
+  }
+
+  .name {
+    float: left;
+  }
+
+  .menu {
+    float: right;
+  }
+
+  li > a {
+    text-decoration: none;
+    color: #7b5459;
+  }
+
+  /* Introduction grid */
+  .box {
+    background-color: white;
+    grid-area: box;
+  }
+
+  .headertekst {
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 25%;
+  }
+
+  /* intro illustratie */
+
+  .illustration {
+    grid-area: illu;
+    height: auto;
     margin: 0px;
+    padding: 0px;
   }
 
-  /* Images */
-  /* Skills */
-  img.art {
-    height: 350px;
-  }
-  /* Over */
-  .about {
-    padding-left: 25px;
-    width: 300px;
+  .illustration > img {
+    height: 500px;
+    margin-top: 100px;
+    margin-bottom: -10px;
+    padding: 0px;
   }
 
-     /* Menubalk */
-    .logo {
-      background-color: none;
-      padding-left: 20px;
-      display: inline;
-      height: 55px;
-    }
+  /* Over tekst */
 
-    .logo img {
-      height: 55px;
-    }
+  #about {
+    background-color: #ebddd5;
+    height: 80%;
+    grid-area: about;
+    vertical-align: text-top;
+    padding: 100px;
+  }
 
-    header {
-      height: 55px;
-      width: 100%;
-      padding: 0px;
-      margin-top: 0px;
-      position: static;
-      background-color: white;
-    }
+  img.align-left {
+    float: left;
+    margin: 0px 30px 30px 0px;
+  }
 
-      /* Div gecentreerde pagina, skills en over */
-      div.space {
-        margin: 0px auto;
-        padding: 20px 25px 10px 60px;
-        max-width: 90%;
-      }
+  img.align-right {
+    float: right;
+    margin-left: 10px;
+  }
 
-        /* Grid items index */
-        .grid-container-index {
-          display: grid;
-          max-width: 100%;
-          max-height: 100%;
-          padding: 20px 55px;
-          margin: 0px auto;
-          grid-template-areas: 
-          'skills skills portfolio portfolio portfolio over over';
-        }
+  img.medium {
+    height: 300px;
+  }
 
-        .grid-item-skills {grid-area: skills;}
-        .grid-item-portfolio {grid-area: portfolio;}
-        .grid-item-over {grid-area: over;}
+  /* portfolio */
 
-        .grid-item-skills:hover, .grid-item-portfolio:hover, .grid-item-over:hover {
-            -webkit-filter: 
-                    drop-shadow(2px 2px 0 white)
-                    drop-shadow(-2px -2px 0 white);
-            filter: drop-shadow(2px 2px 0 white) 
-                    drop-shadow(-2px -2px 0 white);
-        }
+  #portfolio {
+    background-color: white;
+    height: 80%;
+    grid-area: portfolio;
+    padding: 100px;
+  }
 
-        .skills {
-          width: 100%;
-          padding-top: 50px;
-        }
-        .laptop {
-          width: 98%;
-        }
-        .over {
-          width: 100%;
-        }
+  #opdrachten {
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      'spijkkeuren illustrator fotografie'
+      'humanitas contentcanvas ben'
+      'kwf boodschap none';
+  }
 
-          /* Grid portfolio */
-          .grid-item-bril {grid-area: bril;}
-          .grid-item-intro {grid-area: intro;}
-          .grid-item-buzzzle {grid-area: buzzzle;}
-          .grid-item-buzzz {
-            grid-area: buzzz;
-            padding-top: 70px;
-          }
-          .grid-item-foto {grid-area: foto;}
-          .grid-item-fotos {
-            grid-area: fotos;
-            padding-top: 70px;
-          }
-          .grid-item-ben {grid-area: ben;}
-          .grid-item-video {
-            grid-area: video;
-            padding-top: 70px;
-          }
-          .grid-item-kwf {grid-area: kwf;}
-          .grid-item-kwfproject {
-            grid-area: kwfproject;
-            padding-top: 50px;
-          }
-          .grid-item-boodschapp {grid-area: boodschapp;}
-          .grid-item-boodschapapp {
-            grid-area: boodschapapp;
-            padding-top: 70px;
-          }
-          .grid-item-puberbrein {grid-area: puberbrein;}
-          .grid-item-puber {
-            grid-area: puber;
-            padding-top: 70px;
-          }
-          .grid-item-zoetermeer {grid-area: zoetermeer;}
-          .grid-item-vitaal {
-            grid-area: vitaal;
-            padding-top: 70px;
-          }
+  .spijkkeuren {
+    grid-area: spijkkeuren;
+    background-color: #ebddd5;
+    max-width: 300px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
 
-          .grid-container-portfolio {
-            display: grid;
-            padding: 20px 55px;
-            margin: 0px auto;
-            grid-gap: 20px;
-            max-width: 90%;
-            grid-template-areas: 
-            'bril intro intro'
-            'buzzzle buzzzle buzzz'
-            'foto foto fotos'
-            'ben ben video'
-            'kwf kwf kwfproject'
-            'boodschapp boodschapp boodschapapp'
-            'puberbrein puberbrein puber'
-            'zoetermeer zoetermeer vitaal';
-          }
+  .spijkkeuren img {
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-          .grid-item-portfolio {
-            display: grid;
-          }
+  .illustrator {
+    grid-area: illustrator;
+    background-color: #ebddd5;
+    max-width: 300px;
+    min-width: 50px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
 
-          .bril {
-            width: 200px;
-          }
-          .buzzzle, .fotografie, .video, .kwf, .puber, .zoetermeer {
-            width: 500px;
-          }
-          .boodschap {
-            height: 350px;
-            padding-top: 70px;
-          }
-          /* images over */
-          .about {
-            padding-left: 50px;
-          }
+  .illustrator img {
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .fotografie {
+    grid-area: fotografie;
+    background-color: #ebddd5;
+    max-width: 300px;
+    min-width: 50px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
+
+  .fotografie img {
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .humanitas {
+    grid-area: humanitas;
+    background-color: #ebddd5;
+    max-width: 300px;
+    min-width: 50px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
+
+  .humanitas img {
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contentcanvas {
+    grid-area: contentcanvas;
+    background-color: #ebddd5;
+    max-width: 300px;
+    min-width: 50px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
+
+  .contentcanvas img {
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ben {
+    grid-area: ben;
+    background-color: #ebddd5;
+    max-width: 300px;
+    min-width: 50px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
+
+  .ben img {
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .kwf {
+    grid-area: kwf;
+    background-color: #ebddd5;
+    max-width: 300px;
+    min-width: 50px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
+
+  .kwf img {
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .boodschap {
+    grid-area: boodschap;
+    background-color: #ebddd5;
+    max-width: 300px;
+    min-width: 50px;
+    height: 20rem;
+    margin: 0px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
+
+  .boodschap img {
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .spijkkeuren:hover, .fotografie:hover, .illustrator:hover, .contentcanvas:hover, .humanitas:hover, .ben:hover, .kwf:hover, .boodschap:hover {
+    -moz-box-shadow: 0 0 10px #777777;
+    -webkit-box-shadow: 0 0 10px #777777;
+    box-shadow: 0 0 10px #777777;
+  }
+
+  /* Contact */
+
+  #contact {
+    background: #ebddd5 url("../images/mobiel.png") no-repeat;
+    background-size: 300px;
+    background-position: 50px 0px;
+    height: 100%;
+    grid-area: contact;
+  }
+
+  /* Social Media Buttons */
+
+  .icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+
+  .icon-bar a:hover {
+    background-color: #ae9287;
+  }
+
+  .phone {
+    background: #89ae85;
+    color: white;
+  }
+
+  .email {
+    background: #d4554c;
+    color: white;
+  }
+
+  .linkedin {
+    background: #0688bc;
+    color: white;
+  }
+
 }
