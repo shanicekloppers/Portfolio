@@ -154,16 +154,19 @@ html {
     padding: 1rem;
     grid-template-rows: auto auto auto;
     grid-template-areas:
-      'spijkkeuren illustrator fotografie'
-      'humanitas contentcanvas ben'
-      'kwf boodschap none';
+      'spijkkeuren' 
+      'illustrator' 
+      'fotografie'
+      'humanitas' 
+      'contentcanvas' 
+      'ben'
+      'kwf' 
+      'boodschap';
   }
 
-  .spijkkeuren {
-    grid-area: spijkkeuren;
+  .grid {
     background-color: #ebddd5;
     max-width: 300px;
-    min-width: 50px;
     height: 20rem;
     margin: 0px auto;
     padding: 1rem;
@@ -171,147 +174,14 @@ html {
     border: 5px solid transparent;
   }
 
-  .spijkkeuren img {
+  .grid img {
     height: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .illustrator {
-    grid-area: illustrator;
-    background-color: #ebddd5;
-    max-width: 300px;
-    min-width: 50px;
-    height: 20rem;
-    margin: 0px auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 5px solid transparent;
-  }
-
-  .illustrator img {
-    height: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .fotografie {
-    grid-area: fotografie;
-    background-color: #ebddd5;
-    max-width: 300px;
-    min-width: 50px;
-    height: 20rem;
-    margin: 0px auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 5px solid transparent;
-  }
-
-  .fotografie img {
-    height: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .humanitas {
-    grid-area: humanitas;
-    background-color: #ebddd5;
-    max-width: 300px;
-    min-width: 50px;
-    height: 20rem;
-    margin: 0px auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 5px solid transparent;
-  }
-
-  .humanitas img {
-    height: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .contentcanvas {
-    grid-area: contentcanvas;
-    background-color: #ebddd5;
-    max-width: 300px;
-    min-width: 50px;
-    height: 20rem;
-    margin: 0px auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 5px solid transparent;
-  }
-
-  .contentcanvas img {
-    height: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .ben {
-    grid-area: ben;
-    background-color: #ebddd5;
-    max-width: 300px;
-    min-width: 50px;
-    height: 20rem;
-    margin: 0px auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 5px solid transparent;
-  }
-
-  .ben img {
-    height: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .kwf {
-    grid-area: kwf;
-    background-color: #ebddd5;
-    max-width: 300px;
-    min-width: 50px;
-    height: 20rem;
-    margin: 0px auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 5px solid transparent;
-  }
-
-  .kwf img {
-    height: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .boodschap {
-    grid-area: boodschap;
-    background-color: #ebddd5;
-    max-width: 300px;
-    min-width: 50px;
-    height: 20rem;
-    margin: 0px auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 5px solid transparent;
-  }
-
-  .boodschap img {
-    height: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .spijkkeuren:hover, .fotografie:hover, .illustrator:hover, .contentcanvas:hover, .humanitas:hover, .ben:hover, .kwf:hover, .boodschap:hover {
+  .grid:hover {
     -moz-box-shadow: 0 0 10px #777777;
     -webkit-box-shadow: 0 0 10px #777777;
     box-shadow: 0 0 10px #777777;
@@ -515,16 +385,19 @@ html {
     padding: 1rem;
     grid-template-rows: auto auto auto;
     grid-template-areas:
-      'spijkkeuren illustrator fotografie'
-      'humanitas contentcanvas ben'
-      'kwf boodschap none';
+      'spijkkeuren' 
+      'illustrator'
+      'fotografie' 
+      'humanitas' 
+      'contentcanvas' 
+      'ben'
+      'kwf' 
+      'boodschap';
   }
 
-  .spijkkeuren {
-    grid-area: spijkkeuren;
+  .grid {
     background-color: #ebddd5;
     max-width: 300px;
-    min-width: 50px;
     height: 20rem;
     margin: 0px auto;
     padding: 1rem;
@@ -532,147 +405,14 @@ html {
     border: 5px solid transparent;
   }
 
-  .spijkkeuren img {
+  .grid img {
     height: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .illustrator {
-    grid-area: illustrator;
-    background-color: #ebddd5;
-    max-width: 300px;
-    min-width: 50px;
-    height: 20rem;
-    margin: 0px auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 5px solid transparent;
-  }
-
-  .illustrator img {
-    height: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .fotografie {
-    grid-area: fotografie;
-    background-color: #ebddd5;
-    max-width: 300px;
-    min-width: 50px;
-    height: 20rem;
-    margin: 0px auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 5px solid transparent;
-  }
-
-  .fotografie img {
-    height: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .humanitas {
-    grid-area: humanitas;
-    background-color: #ebddd5;
-    max-width: 300px;
-    min-width: 50px;
-    height: 20rem;
-    margin: 0px auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 5px solid transparent;
-  }
-
-  .humanitas img {
-    height: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .contentcanvas {
-    grid-area: contentcanvas;
-    background-color: #ebddd5;
-    max-width: 300px;
-    min-width: 50px;
-    height: 20rem;
-    margin: 0px auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 5px solid transparent;
-  }
-
-  .contentcanvas img {
-    height: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .ben {
-    grid-area: ben;
-    background-color: #ebddd5;
-    max-width: 300px;
-    min-width: 50px;
-    height: 20rem;
-    margin: 0px auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 5px solid transparent;
-  }
-
-  .ben img {
-    height: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .kwf {
-    grid-area: kwf;
-    background-color: #ebddd5;
-    max-width: 300px;
-    min-width: 50px;
-    height: 20rem;
-    margin: 0px auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 5px solid transparent;
-  }
-
-  .kwf img {
-    height: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .boodschap {
-    grid-area: boodschap;
-    background-color: #ebddd5;
-    max-width: 300px;
-    min-width: 50px;
-    height: 20rem;
-    margin: 0px auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 5px solid transparent;
-  }
-
-  .boodschap img {
-    height: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .spijkkeuren:hover, .fotografie:hover, .illustrator:hover, .contentcanvas:hover, .humanitas:hover, .ben:hover, .kwf:hover, .boodschap:hover {
+  .grid:hover {
     -moz-box-shadow: 0 0 10px #777777;
     -webkit-box-shadow: 0 0 10px #777777;
     box-shadow: 0 0 10px #777777;
@@ -875,13 +615,13 @@ html {
     padding: 1rem;
     grid-template-rows: auto auto auto;
     grid-template-areas:
-      'spijkkeuren illustrator fotografie'
-      'humanitas contentcanvas ben'
-      'kwf boodschap none';
+      'spijkkeuren illustrator'
+      'fotografie humanitas' 
+      'contentcanvas ben'
+      'kwf boodschap';
   }
 
-  .spijkkeuren {
-    grid-area: spijkkeuren;
+  .grid {
     background-color: #ebddd5;
     max-width: 300px;
     height: 20rem;
@@ -891,147 +631,14 @@ html {
     border: 5px solid transparent;
   }
 
-  .spijkkeuren img {
+  .grid img {
     height: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .illustrator {
-    grid-area: illustrator;
-    background-color: #ebddd5;
-    max-width: 300px;
-    min-width: 50px;
-    height: 20rem;
-    margin: 0px auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 5px solid transparent;
-  }
-
-  .illustrator img {
-    height: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .fotografie {
-    grid-area: fotografie;
-    background-color: #ebddd5;
-    max-width: 300px;
-    min-width: 50px;
-    height: 20rem;
-    margin: 0px auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 5px solid transparent;
-  }
-
-  .fotografie img {
-    height: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .humanitas {
-    grid-area: humanitas;
-    background-color: #ebddd5;
-    max-width: 300px;
-    min-width: 50px;
-    height: 20rem;
-    margin: 0px auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 5px solid transparent;
-  }
-
-  .humanitas img {
-    width: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .contentcanvas {
-    grid-area: contentcanvas;
-    background-color: #ebddd5;
-    max-width: 300px;
-    min-width: 50px;
-    height: 20rem;
-    margin: 0px auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 5px solid transparent;
-  }
-
-  .contentcanvas img {
-    width: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .ben {
-    grid-area: ben;
-    background-color: #ebddd5;
-    max-width: 300px;
-    min-width: 50px;
-    height: 20rem;
-    margin: 0px auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 5px solid transparent;
-  }
-
-  .ben img {
-    width: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .kwf {
-    grid-area: kwf;
-    background-color: #ebddd5;
-    max-width: 300px;
-    min-width: 50px;
-    height: 20rem;
-    margin: 0px auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 5px solid transparent;
-  }
-
-  .kwf img {
-    height: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .boodschap {
-    grid-area: boodschap;
-    background-color: #ebddd5;
-    max-width: 300px;
-    min-width: 50px;
-    height: 20rem;
-    margin: 0px auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 5px solid transparent;
-  }
-
-  .boodschap img {
-    height: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .spijkkeuren:hover, .fotografie:hover, .illustrator:hover, .contentcanvas:hover, .humanitas:hover, .ben:hover, .kwf:hover, .boodschap:hover {
+  .grid:hover {
     -moz-box-shadow: 0 0 10px #777777;
     -webkit-box-shadow: 0 0 10px #777777;
     box-shadow: 0 0 10px #777777;
@@ -1237,8 +844,7 @@ html {
       'kwf boodschap none';
   }
 
-  .spijkkeuren {
-    grid-area: spijkkeuren;
+  .grid {
     background-color: #ebddd5;
     max-width: 300px;
     height: 20rem;
@@ -1248,147 +854,14 @@ html {
     border: 5px solid transparent;
   }
 
-  .spijkkeuren img {
+  .grid img {
     height: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .illustrator {
-    grid-area: illustrator;
-    background-color: #ebddd5;
-    max-width: 300px;
-    min-width: 50px;
-    height: 20rem;
-    margin: 0px auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 5px solid transparent;
-  }
-
-  .illustrator img {
-    height: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .fotografie {
-    grid-area: fotografie;
-    background-color: #ebddd5;
-    max-width: 300px;
-    min-width: 50px;
-    height: 20rem;
-    margin: 0px auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 5px solid transparent;
-  }
-
-  .fotografie img {
-    height: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .humanitas {
-    grid-area: humanitas;
-    background-color: #ebddd5;
-    max-width: 300px;
-    min-width: 50px;
-    height: 20rem;
-    margin: 0px auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 5px solid transparent;
-  }
-
-  .humanitas img {
-    height: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .contentcanvas {
-    grid-area: contentcanvas;
-    background-color: #ebddd5;
-    max-width: 300px;
-    min-width: 50px;
-    height: 20rem;
-    margin: 0px auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 5px solid transparent;
-  }
-
-  .contentcanvas img {
-    height: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .ben {
-    grid-area: ben;
-    background-color: #ebddd5;
-    max-width: 300px;
-    min-width: 50px;
-    height: 20rem;
-    margin: 0px auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 5px solid transparent;
-  }
-
-  .ben img {
-    height: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .kwf {
-    grid-area: kwf;
-    background-color: #ebddd5;
-    max-width: 300px;
-    min-width: 50px;
-    height: 20rem;
-    margin: 0px auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 5px solid transparent;
-  }
-
-  .kwf img {
-    height: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .boodschap {
-    grid-area: boodschap;
-    background-color: #ebddd5;
-    max-width: 300px;
-    min-width: 50px;
-    height: 20rem;
-    margin: 0px auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 5px solid transparent;
-  }
-
-  .boodschap img {
-    height: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .spijkkeuren:hover, .fotografie:hover, .illustrator:hover, .contentcanvas:hover, .humanitas:hover, .ben:hover, .kwf:hover, .boodschap:hover {
+  .grid:hover {
     -moz-box-shadow: 0 0 10px #777777;
     -webkit-box-shadow: 0 0 10px #777777;
     box-shadow: 0 0 10px #777777;
