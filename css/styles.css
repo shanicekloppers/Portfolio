@@ -160,6 +160,7 @@ html {
       'humanitas' 
       'contentcanvas' 
       'ben'
+      'evalytics'
       'kwf' 
       'boodschap';
   }
@@ -391,6 +392,7 @@ html {
       'humanitas' 
       'contentcanvas' 
       'ben'
+      'evalytics'
       'kwf' 
       'boodschap';
   }
@@ -618,7 +620,8 @@ html {
       'spijkkeuren illustrator'
       'fotografie humanitas' 
       'contentcanvas ben'
-      'kwf boodschap';
+      'evalytics kwf'
+      'boodschap none';
   }
 
   .grid {
@@ -841,7 +844,7 @@ html {
     grid-template-areas:
       'spijkkeuren illustrator fotografie'
       'humanitas contentcanvas ben'
-      'kwf boodschap none';
+      'evalytics kwf boodschap';
   }
 
   .grid {
