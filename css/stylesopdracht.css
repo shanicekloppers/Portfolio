@@ -6,1130 +6,1883 @@ html {
   background-attachment: fixed;
 }
 
-body {
-  font-family: 'Questrial', sans-serif;
-  font-weight: normal;
-  text-align: left;
-  padding: 0px;
-  margin: 0px;
-  max-height: 100%;
-  display: grid;
-  grid-template-rows: auto auto auto;
-  grid-template-areas:
-    'nav nav nav'
-    'leftbutton opdrachttitel rightbutton'
-    'sectieeen sectieeen sectiea'
-    'sectieb sectietwee sectietwee'
-    'sectiedrie sectiedrie sectiec'
-    'titeleen titeleen titeleen'
-    'slideshoween slideshoween slideshoween'
-    'titeltwee titeltwee titeltwee'
-    'slideshowtwee slideshowtwee slideshowtwee'
-    'titeldrie titeldrie titeldrie'
-    'slideshowdrie slideshowdrie slideshowdrie'
-    'contact contact contact';
-}
-
-h2 {
-  text-align: left;
-}
-
-img {
-  margin: 20px;
-  height: 300px;
-}
-
-/* nav */
-#nav {
-  grid-area: nav;
-  position: fixed;
-  background-color: #ebddd5;
-  width: 100%;
-  z-index: 10;
-  grid-area: nav;
-  box-shadow: 0px 0px 10px 0px #CABDB3;
-}
-
-li {
-  display: inline;
-  margin-right: 50px;
-}
-
-.name {
-  float: left;
-}
-
-.menu {
-  float: right;
-}
-
-a {
-  text-decoration: none;
-  color: #7b5459;
-}
-
-a:hover {
-  text-decoration: none;
-  color: #B76E79;
-}
-
-
-/* Opdrachten portfolio*/
-
-#leftbutton {
-  grid-area: leftbutton;
-  background-color: #ebddd5;
-  height: auto;
-  margin: 0px;
-  padding: 100px 0px 20px 70px;
-}
-
-button {
-  color: white;
-  background-color: #7b5459;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 15px;
-}
-
-button:hover {
-  color: white;
-  background-color: #B76E79;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 15px;
-  cursor: pointer;
-}
-
-#rightbutton {
-  grid-area: rightbutton;
-  background-color: #ebddd5;
-  height: auto;
-  margin: 0px;
-  padding: 100px 100px 20px 0px;
-}
-
-#opdrachttitel {
-  grid-area: opdrachttitel;
-  background-color: #ebddd5;
-  height: 100px;
-  margin: 0px;
-  padding: 70px 0px 20px 0px;
-}
-
-#opdrachttitel > h1 {
-  margin: 0px auto;
-  text-align: center;
-}
-
-#sectie1 {
-  grid-area: sectieeen;
-  background-color: white;
-  height: auto;
-  margin: 0px;
-  padding: 0px;
-}
-
-#sectie1 h2, #sectie1 p {
-  padding: 20px 100px 0px 100px;
-}
-
-#sectie1a {
-  grid-area: sectiea;
-  background-color: white;
-  height: auto;
-  margin: 0px;
-  padding: 0px 0px 0px 0px;
-}
-
-#sectie1a > .humansize {
-  width: 400px;
-  height: 230px;
-}
-
-#sectie2 {
-  grid-area: sectietwee;
-  background-color: #ebddd5;
-  height: auto;
-  margin: 0px;
-  padding: 0px;
-}
-
-#sectie2 h2, #sectie2 p {
-  padding: 20px 50px 0px 0px;
-}
-
-#sectie2b {
-  grid-area: sectieb;
-  background-color: #ebddd5;
-  height: auto;
-  margin: 0px;
-  padding: 0px 0px 0px 70px;
-}
-
-#sectie2b > .long {
-  width: 200px;
-  height: 400px;
-}
-
-#sectie3 {
-  grid-area: sectiedrie;
-  background-color: white;
-  height: auto;
-  margin: 0px;
-  padding: 0px;
-}
-
-#sectie3 h2, #sectie3 p {
-  padding: 20px 100px 0px 100px;
-}
-
-#sectie3 > video {
-  padding: 20px 20px 20px 100px;
-  height: 400px;
-  width: 520px;
-}
-
-#sectie3c {
-  grid-area: sectiec;
-  background-color: white;
-  height: auto;
-  margin: 0px;
-  padding: 0px 50px 0px 0px;
-}
-
-#sectie3c > .lang {
-  padding: 65px 20px 0px 0px;
-  height: 400px;
-  width: 200px;
-}
-
-#sectie3c > .breed {
-  padding: 40px 0px 20px 0px;
-  height: 200px;
-  width: 400px;
-}
-
-#sectie3c > .shorok {
-  width: 300px;
-  height: 230px;
-}
-
-.othersize {
-  width: 300px;
-  height: 200px;
-}
-
-/* Slideshow */
-
-#titel1 {
-  grid-area: titeleen;
-  background-color: white;
-  height: auto;
-  margin: 0px;
-  padding: 0px 0px 0px 0px;
-  text-align: center;
-}
-
-#titel1 > p {
-  width: 500px;
-  text-align: center;
-  margin: auto;
-}
-
-#titel2 {
-  grid-area: titeltwee;
-  background-color: #ebddd5;
-  height: auto;
-  margin: 0px;
-  padding: 0px 0px 0px 0px;
-  text-align: center;
-}
-
-#titel2 > p {
-  width: 500px;
-  text-align: center;
-  margin: auto;
-}
-
-
-#titel3 {
-  grid-area: titeldrie;
-  background-color: white;
-  height: auto;
-  margin: 0px;
-  padding: 0px 0px 0px 0px;
-  text-align: center;
-}
-
-#titel3 > p {
-  width: 500px;
-  text-align: center;
-  margin: auto;
-}
-
-
-#slideshow1 {
-  grid-area: slideshoween;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  margin: 0px;
-  padding: 0px;
-  
-  width: 100%;
-  height: 100%;
-}
-
-#slideshow2 {
-  grid-area: slideshowtwee;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ebddd5;
-  margin: 0px;
-  padding: 0px;
-  
-  width: 100%;
-  height: 100%;
-}
-
-#slideshow3 {
-  grid-area: slideshowdrie;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  margin: 0px;
-  padding: 0px;
-  
-  width: 100%;
-  height: 100%;
-}
-
-.card1 , .card2 , .card3{
-  position: relative;
-  
-  width: 600px;
-  height: 400px;
-  overflow: hidden;
-
-  border-radius: 5px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/*Light blue cover above the slide show*/
-.card1::after , .card2::after , .card3::after{
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 900;
-
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.card1_part{
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 7;
-
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  
-  transform: translateX( 700px );
-  background-image: url("../images/fotografie/f1.png");
-  background-size: 100%;
-  
-  animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
-}
-
-
-.card1_part.card1_part-two {
-  z-index: 6;
-  background-image: url("../images/fotografie/f2.png");
-  animation-delay: 7s;
-}
-
-.card1_part.card1_part-three {
-  z-index: 5;
-  background-image: url("../images/fotografie/f3.png");
-  animation-delay: 14s;
-}
-
-.card1_part.card1_part-four {
-  z-index: 4;
-  background-image: url("../images/fotografie/f6.png");
-  animation-delay: 21s;
-}
-
-.card2_part{
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 7;
-
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  
-  transform: translateX( 700px );
-  background-image: url("../images/fotografie/b1.png");
-  background-size: 100%;
-  
-  animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
-}
-
-.card2_part.card2_part-two {
-  z-index: 6;
-  background-image: url("../images/fotografie/b2.png");
-  animation-delay: 7s;
-}
-
-.card2_part.card2_part-three {
-  z-index: 5;
-  background-image: url("../images/fotografie/b3.png");
-  animation-delay: 14s;
-}
-
-.card2_part.card2_part-four {
-  z-index: 4;
-  background-image: url("../images/fotografie/b4.png");
-  animation-delay: 21s;
-}
-
-.card3_part{
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 7;
-
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  
-  transform: translateX( 700px );
-  background-image: url("../images/fotografie/tr1.png");
-  background-size: 100%;
-  
-  animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
-}
-
-.card3_part.card3_part-two {
-  z-index: 6;
-  background-image: url("../images/fotografie/tr2.png");
-  animation-delay: 7s;
-}
-
-.card3_part.card3_part-three {
-  z-index: 5;
-  background-image: url("../images/fotografie/tr3.png");
-  animation-delay: 14s;
-}
-
-.card3_part.card3_part-four {
-  z-index: 4;
-  background-image: url("../images/fotografie/tr6.png");
-  animation-delay: 21s;
-}
-
-
-@keyframes opaqTransition {
-  3% { transform: translateX( 0 ); }
-  25% { transform: translateX( 0 ); }
-  28% { transform: translateX( -700px ); }
-  100% { transform: translateX( -700px ); }
-}
-
-/* Contact */
-
-#contact {
-  background: #ebddd5 url("../images/mobiel.png") no-repeat;
-  background-size: 300px;
-  background-position: 50px 0px;
-  height: 100%;
-  grid-area: contact;
-}
-
 /* Social Media Buttons */
 
-.icon-bar {
-  position: fixed;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
+  .icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
 
-.icon-bar a {
-  display: block;
-  text-align: center;
-  padding: 16px;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 20px;
-}
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
 
-.icon-bar a:hover {
-  background-color: #ae9287;
-}
+  .icon-bar a:hover {
+    background-color: #ae9287;
+  }
 
-.phone {
-  background: #89ae85;
-  color: white;
-}
+  .phone {
+    background: #89ae85;
+    color: white;
+  }
 
-.email {
-  background: #d4554c;
-  color: white;
-}
+  .email {
+    background: #d4554c;
+    color: white;
+  }
 
-.linkedin {
-  background: #0688bc;
-  color: white;
-}
-
-/* Tags Algemeen
-
-a {
-  color: #B76E79;
-  text-decoration: none;
-}
-
-a:hover {
-  color: white;
-}
-
-p {
-  color: ;
-}
+  .linkedin {
+    background: #0688bc;
+    color: white;
+  }
 
 /* Responsiveness */
-/* Schergrootte 1 */
+/* Schermgrootte 1 */
 @media only screen and (max-width: 480px) {
+
   body {
-    font-size: 12px;
+    font-family: 'Questrial', sans-serif;
     color: #676767;
+    font-weight: normal;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+    max-height: 100%;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      'nav nav'
+      'opdrachttitel opdrachttitel'
+      'leftbutton rightbutton'
+      'sectieeen sectieeen'
+      'sectiea sectiea'
+      'sectietwee sectietwee'
+      'sectieb sectieb'
+      'sectiedrie sectiedrie'
+      'sectiec sectiec'
+      'titeleen titeleen'
+      'titeleen titeleen'
+      'slideshoween slideshoween'
+      'titeltwee titeltwee'
+      'slideshowtwee slideshowtwee'
+      'titeldrie titeldrie'
+      'slideshowdrie slideshowdrie'
+      'contact contact';
   }
 
   h1 {
   font-family: "Questrial";
-  font-size: 25px;
+  font-size: 23px;
   color: #7b5459;
   margin: 0px;
   }
 
   h2 {
     font-family: "Questrial";
+    text-align: left;
     font-size: 20px;
     color: #B76E79;
     padding: 0px;
     margin: 0px;
   }
- 
-}
-  /* Images */
-  /* Skills 
-  img.art {
-    width: 50%;
-  }
-  /* Over 
-  .about {
-    padding-left: 25px;
-    width: 50%;
+
+  img {
+    margin: 20px;
+    width: 250px;
   }
 
-    /* Menubalk 
-    .logo {
-      background-color: none;
-      padding-left: 20px;
-      height: 35px;
-    }
+  /* nav */
+  #nav {
+    position: fixed;
+    background-color: #ebddd5;
+    width: 100%;
+    z-index: 10;
+    grid-area: nav;
+    box-shadow: 0px 0px 10px 0px #CABDB3;
+  }
 
-    .logo img {
-      height: 35px;
-    }
+  li {
+    display: inline;
+    margin-right: 20px;
+  }
 
-      /* Div gecentreerde pagina, skills en over 
-      div.space {
-        margin: 0px auto;
-        padding: 20px 25px 10px 60px;
-        max-width: 90%;
-      }
+  .name {
+    float: left;
+  }
 
-        /* Grid Index 
-        .grid-container-index {
-          display: grid;
-          max-width: 100%;
-          max-height: 100%;
-          padding: 20px 55px;
-          margin: 0px auto;
-          grid-template-areas: 
-          'skills skills portfolio portfolio portfolio over over';
-        }
+  .menu {
+    float: left;
+  }
 
-        .grid-item-skills {grid-area: skills;}
-        .grid-item-portfolio {grid-area: portfolio;}
-        .grid-item-over {grid-area: over;}
+  li > a {
+    text-decoration: none;
+    color: #7b5459;
+  }
 
-        .grid-item-skills:hover, .grid-item-portfolio:hover, .grid-item-over:hover {
-            -webkit-filter: 
-                    drop-shadow(2px 2px 0 white)
-                    drop-shadow(-2px -2px 0 white);
-            filter: drop-shadow(2px 2px 0 white) 
-                    drop-shadow(-2px -2px 0 white);
-        }
+  a {
+    text-decoration: none;
+    color: #7b5459;
+  }
 
-        .skills {
-          width: 100%;
-          text-align: right;
-          padding-top: 40px;
-        }
-        .laptop {
-          width: 98%;
-        }
-        .over {
-          width: 100%;
-        }
+  a:hover {
+    text-decoration: none;
+    color: #B76E79;
+  }
 
-          /* Grid portfolio 
-          .grid-item-bril {grid-area: bril;}
-          .grid-item-intro {grid-area: intro;}
-          .grid-item-buzzzle {grid-area: buzzzle;}
-          .grid-item-buzzz {grid-area: buzzz;}
-          .grid-item-foto {grid-area: foto;}
-          .grid-item-fotos {grid-area: fotos;}
-          .grid-item-ben {grid-area: ben;}
-          .grid-item-video {grid-area: video;}
-          .grid-item-kwf {grid-area: kwf;}
-          .grid-item-kwfproject {grid-area: kwfproject;}
-          .grid-item-boodschapp {grid-area: boodschapp;}
-          .grid-item-boodschapapp {grid-area: boodschapapp;}
-          .grid-item-puberbrein {grid-area: puberbrein;}
-          .grid-item-puber {grid-area: puber;}
-          .grid-item-zoetermeer {grid-area: zoetermeer;}
-          .grid-item-vitaal {grid-area: vitaal;}
 
-          .grid-container-portfolio {
-            display: grid;
-            padding: 20px 55px;
-            margin: 0px auto;
-            grid-gap: 20px;
-            max-width: 90%;
-            grid-template-areas: 
-            'bril intro intro '
-            'foto foto foto'
-            'buzzzle buzzzle buzzzle' 
-            'buzzz buzzz buzzz'
-            'fotos fotos fotos'
-            'ben ben ben'
-            'video video video'
-            'kwf kwf kwf'
-            'kwfproject kwfproject kwfproject'
-            'boodschapp boodschapp boodschapp'
-            'boodschapapp boodschapapp boodschapapp'
-            'puberbrein puberbrein puberbrein'
-            'puber puber puber'
-            'zoetermeer zoetermeer zoetermeer'
-            'vitaal vitaal vitaal';
-          }
+  /* Opdrachten portfolio*/
 
-          .bril {
-            height: 50px;
-          }
-          .buzzzle, .fotografie, .video, .kwf, .puber, .zoetermeer {
-            max-height: 150px;
-            max-width: 250px
-          }
-          .boodschap {
-            max-height: 150px;
-            padding-top: 5px;
-          }
+  #leftbutton {
+    grid-area: leftbutton;
+    background-color: #ebddd5;
+    height: auto;
+    margin: 0px;
+    padding: 0px 0px 20px 30px;
+  }
+
+  button {
+    color: white;
+    background-color: #7b5459;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+  }
+
+  button:hover {
+    color: white;
+    background-color: #B76E79;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+
+  #rightbutton {
+    grid-area: rightbutton;
+    background-color: #ebddd5;
+    height: auto;
+    margin: 0px;
+    padding: 0px 30px 20px 0px;
+  }
+
+  #opdrachttitel {
+    grid-area: opdrachttitel;
+    background-color: #ebddd5;
+    height: 50px;
+    margin: 0px;
+    padding: 100px 0px 20px 0px;
+  }
+
+  #opdrachttitel > h1 {
+    margin: 0px auto;
+    text-align: center;
+  }
+
+  #sectie1 {
+    grid-area: sectieeen;
+    background-color: white;
+    height: auto;
+    margin: 0px auto;
+    padding: 0px;
+  }
+
+  #sectie1 h2, #sectie1 p {
+    padding: 20px 50px 0px 70px;
+    text-align: center;
+  }
+
+  #sectie1a {
+    grid-area: sectiea;
+    background-color: white;
+    width: auto;
+    margin: 0px auto;
+    text-align: center;
+    padding: 0px;
+  }
+
+  #sectie2 {
+    grid-area: sectietwee;
+    background-color: #ebddd5;
+    height: auto;
+    margin: 0px auto;
+    padding: 0px;
+  }
+
+  #sectie2 h2, #sectie2 p {
+    padding: 20px 50px 0px 70px;
+    text-align: center;
+  }
+
+  #sectie2b {
+    grid-area: sectieb;
+    background-color: #ebddd5;
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    padding: 0px;
+  }
+
+  #sectie3 {
+    grid-area: sectiedrie;
+    background-color: white;
+    height: auto;
+    text-align: center;
+    margin: 0px auto;
+    padding: 0px;
+  }
+
+  #sectie3 h2, #sectie3 p {
+    padding: 20px 50px 0px 70px;
+    text-align: center;
+  }
+
+  #sectie3 > video {
+    padding-top: 20px;
+    height: 230px;
+    width: 130px;
+  }
+
+  #sectie3c {
+    grid-area: sectiec;
+    background-color: white;
+    width: auto;
+    margin: 0px auto;
+    text-align: center;
+    padding: 0px;
+  }
+
+  #sectie3c > video {
+    padding-top: 20px;
+    height: 200px;
+    width: 250px;
+  }
+
+  /* Slideshow */
+
+  #titel1 {
+    grid-area: titeleen;
+    background-color: white;
+    height: auto;
+    margin: 0px;
+    padding: 0px 50px;
+    text-align: center;
+  }
+
+  #titel1 > p {
+    width: 250px;
+    text-align: center;
+    margin: auto;
+  }
+
+  #titel2 {
+    grid-area: titeltwee;
+    background-color: #ebddd5;
+    height: auto;
+    margin: 0px;
+    padding: 0px 50px;
+    text-align: center;
+  }
+
+  #titel2 > p {
+    width: 250px;
+    text-align: center;
+    margin: auto;
+  }
+
+
+  #titel3 {
+    grid-area: titeldrie;
+    background-color: white;
+    height: auto;
+    margin: 0px;
+    padding: 0px 50px;
+    text-align: center;
+  }
+
+  #titel3 > p {
+    width: 250px;
+    text-align: center;
+    margin: auto;
+  }
+
+
+  #slideshow1 {
+    grid-area: slideshoween;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    
+    width: 100%;
+    height: 100%;
+  }
+
+  #slideshow2 {
+    grid-area: slideshowtwee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebddd5;
+    margin: 0px;
+    padding: 0px;
+    
+    width: 100%;
+    height: 100%;
+  }
+
+  #slideshow3 {
+    grid-area: slideshowdrie;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    
+    width: 100%;
+    height: 100%;
+  }
+
+  .card1 , .card2 , .card3{
+    position: relative;
+    
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  /*Light blue cover above the slide show*/
+  .card1::after , .card2::after , .card3::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 900;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card1_part{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 7;
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+    transform: translateX( 700px );
+    background-image: url("../images/fotografie/f1.png");
+    background-size: 100%;
+    
+    animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+  }
+
+
+  .card1_part.card1_part-two {
+    z-index: 6;
+    background-image: url("../images/fotografie/f2.png");
+    animation-delay: 7s;
+  }
+
+  .card1_part.card1_part-three {
+    z-index: 5;
+    background-image: url("../images/fotografie/f3.png");
+    animation-delay: 14s;
+  }
+
+  .card1_part.card1_part-four {
+    z-index: 4;
+    background-image: url("../images/fotografie/f6.png");
+    animation-delay: 21s;
+  }
+
+  .card2_part{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 7;
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+    transform: translateX( 700px );
+    background-image: url("../images/fotografie/b1.png");
+    background-size: 100%;
+    
+    animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+  }
+
+  .card2_part.card2_part-two {
+    z-index: 6;
+    background-image: url("../images/fotografie/b2.png");
+    animation-delay: 7s;
+  }
+
+  .card2_part.card2_part-three {
+    z-index: 5;
+    background-image: url("../images/fotografie/b3.png");
+    animation-delay: 14s;
+  }
+
+  .card2_part.card2_part-four {
+    z-index: 4;
+    background-image: url("../images/fotografie/b4.png");
+    animation-delay: 21s;
+  }
+
+  .card3_part{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 7;
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+    transform: translateX( 700px );
+    background-image: url("../images/fotografie/tr1.png");
+    background-size: 100%;
+    
+    animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+  }
+
+  .card3_part.card3_part-two {
+    z-index: 6;
+    background-image: url("../images/fotografie/tr2.png");
+    animation-delay: 7s;
+  }
+
+  .card3_part.card3_part-three {
+    z-index: 5;
+    background-image: url("../images/fotografie/tr3.png");
+    animation-delay: 14s;
+  }
+
+  .card3_part.card3_part-four {
+    z-index: 4;
+    background-image: url("../images/fotografie/tr6.png");
+    animation-delay: 21s;
+  }
+
+
+  @keyframes opaqTransition {
+    3% { transform: translateX( 0 ); }
+    25% { transform: translateX( 0 ); }
+    28% { transform: translateX( -700px ); }
+    100% { transform: translateX( -700px ); }
+  }
+
+  /* Contact */
+
+  #contact {
+    background: #ebddd5 url("../images/mobiel.png") no-repeat;
+    background-size: 100px;
+    background-position: 0px 750px;
+    height: 100%;
+    grid-area: contact;
+  }
+
 }
 
 /* Schermgrootte 2 */
-@media only screen and (min-width: 481px) and (max-width: 739px) {
+@media only screen and (min-width: 481px) and (max-width: 660px) {
+
   body {
-    font-size: 14px;
+    font-family: 'Questrial', sans-serif;
+    color: #676767;
+    font-weight: normal;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+    max-height: 100%;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      'nav nav'
+      'opdrachttitel opdrachttitel'
+      'leftbutton rightbutton'
+      'sectieeen sectieeen'
+      'sectiea sectiea'
+      'sectietwee sectietwee'
+      'sectieb sectieb'
+      'sectiedrie sectiedrie'
+      'sectiec sectiec'
+      'titeleen titeleen'
+      'titeleen titeleen'
+      'slideshoween slideshoween'
+      'titeltwee titeltwee'
+      'slideshowtwee slideshowtwee'
+      'titeldrie titeldrie'
+      'slideshowdrie slideshowdrie'
+      'contact contact';
   }
 
   h1 {
-  font-family: "Questrial" sans-serif;
-  font-weight: normal;
-  font-size: 30px;
+  font-family: "Questrial";
+  font-size: 23px;
   color: #7b5459;
   margin: 0px;
   }
 
   h2 {
-    font-family: "Questrial" sans-serif;
-    font-weight: normal;
+    font-family: "Questrial";
+    text-align: left;
     font-size: 20px;
     color: #B76E79;
     padding: 0px;
     margin: 0px;
   }
 
-}
-
-  /* Images */
-  /* Skills 
-  img.art {
-    width: 50%;
-  }
-  /* Over 
-  .about {
-    padding-left: 25px;
-    width: 50%;
+  img {
+    margin: 20px;
+    width: 250px;
   }
 
-    /* Menubalk 
-    .logo {
-      background-color: none;
-      padding-left: 20px;
-      height: 35px;
-    }
+  /* nav */
+  #nav {
+    position: fixed;
+    background-color: #ebddd5;
+    width: 100%;
+    z-index: 10;
+    grid-area: nav;
+    box-shadow: 0px 0px 10px 0px #CABDB3;
+  }
 
-    .logo img {
-      height: 35px;
-    }
+  li {
+    display: inline;
+    margin-right: 20px;
+  }
 
-    header {
-      height: 35px;
-      width: 100%;
-      padding: 0px;
-      margin-top: 0px;
-      position: static;
-      background-color: white;
-    }
+  .name {
+    float: left;
+  }
 
-      /* Div gecentreerde pagina, skills en over 
-      div.space {
-        margin: 0px auto;
-        padding: 20px 25px 10px 60px;
-        max-width: 90%;
-      }
+  .menu {
+    float: left;
+  }
 
-        /* Grid items index 
-        .grid-container-index {
-          display: grid;
-          max-width: 100%;
-          max-height: 100%;
-          padding: 20px 55px;
-          margin: 0px auto;
-          grid-template-areas: 
-          'skills skills portfolio portfolio portfolio over over';
-        }
+  li > a {
+    text-decoration: none;
+    color: #7b5459;
+  }
 
-        .grid-item-skills {grid-area: skills;}
-        .grid-item-portfolio {grid-area: portfolio;}
-        .grid-item-over {grid-area: over;}
+  a {
+    text-decoration: none;
+    color: #7b5459;
+  }
 
-        .grid-item-skills:hover, .grid-item-portfolio:hover, .grid-item-over:hover {
-            -webkit-filter: 
-                    drop-shadow(2px 2px 0 white)
-                    drop-shadow(-2px -2px 0 white);
-            filter: drop-shadow(2px 2px 0 white) 
-                    drop-shadow(-2px -2px 0 white);
-        }
+  a:hover {
+    text-decoration: none;
+    color: #B76E79;
+  }
 
-        .skills {
-          width: 100%;
-          text-align: right;
-          padding-top: 40px;
-        }
-        .laptop {
-          width: 98%;
-        }
-        .over {
-          width: 100%;
-        }
 
-        /* Grid portfolio 
-        .grid-item-bril {grid-area: bril;}
-        .grid-item-intro {grid-area: intro;}
-        .grid-item-buzzzle {grid-area: buzzzle;}
-        .grid-item-buzzz {grid-area: buzzz;}
-        .grid-item-foto {grid-area: foto;}
-        .grid-item-fotos {grid-area: fotos;}
-        .grid-item-ben {grid-area: ben;}
-        .grid-item-video {grid-area: video;}
-        .grid-item-kwf {grid-area: kwf;}
-        .grid-item-kwfproject {grid-area: kwfproject;}
-        .grid-item-boodschapp {grid-area: boodschapp;}
-        .grid-item-boodschapapp {grid-area: boodschapapp;}
-        .grid-item-puberbrein {grid-area: puberbrein;}
-        .grid-item-puber {grid-area: puber;}
-        .grid-item-zoetermeer {grid-area: zoetermeer;}
-        .grid-item-vitaal {grid-area: vitaal;}
+  /* Opdrachten portfolio*/
 
-        .grid-container-portfolio {
-          display: grid;
-          padding: 20px 55px;
-          margin: 0px auto;
-          grid-gap: 20px;
-          max-width: 90%;
-          grid-template-areas: 
-          'bril intro intro '
-          'buzzzle buzzzle buzzzle'
-          'buzzz buzzz buzzz'
-          'foto foto foto'
-          'fotos fotos fotos'
-          'ben ben ben'
-          'video video video'
-          'kwf kwf kwf'
-          'kwfproject kwfproject kwfproject'
-          'boodschapp boodschapp boodschapp'
-          'boodschapapp boodschapapp boodschapapp'
-          'puberbrein puberbrein puberbrein'
-          'puber puber puber'
-          'zoetermeer zoetermeer zoetermeer'
-          'vitaal vitaal vitaal';
-        }
+  #leftbutton {
+    grid-area: leftbutton;
+    background-color: #ebddd5;
+    height: auto;
+    margin: 0px;
+    padding: 0px 0px 20px 30px;
+  }
 
-        .bril {
-          height: 100px;
-        }
-        .buzzzle, .fotografie, .video, .kwf, .puber, .zoetermeer {
-          max-height: 300px;
-          max-width: 500px
-        }
-        .boodschap {
-          max-height: 300px;
-          padding-top: 10px;
-        }
-}
+  button {
+    color: white;
+    background-color: #7b5459;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+  }
+
+  button:hover {
+    color: white;
+    background-color: #B76E79;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+
+  #rightbutton {
+    grid-area: rightbutton;
+    background-color: #ebddd5;
+    height: auto;
+    margin: 0px;
+    padding: 0px 30px 20px 0px;
+  }
+
+  #opdrachttitel {
+    grid-area: opdrachttitel;
+    background-color: #ebddd5;
+    height: 50px;
+    margin: 0px;
+    padding: 100px 0px 20px 0px;
+  }
+
+  #opdrachttitel > h1 {
+    margin: 0px auto;
+    text-align: center;
+  }
+
+  #sectie1 {
+    grid-area: sectieeen;
+    background-color: white;
+    height: auto;
+    margin: 0px auto;
+    padding: 0px;
+  }
+
+  #sectie1 h2, #sectie1 p {
+    padding: 20px 50px 0px 70px;
+    text-align: center;
+  }
+
+  #sectie1a {
+    grid-area: sectiea;
+    background-color: white;
+    width: auto;
+    margin: 0px auto;
+    text-align: center;
+    padding: 0px;
+  }
+
+  #sectie2 {
+    grid-area: sectietwee;
+    background-color: #ebddd5;
+    height: auto;
+    margin: 0px auto;
+    padding: 0px;
+  }
+
+  #sectie2 h2, #sectie2 p {
+    padding: 20px 50px 0px 70px;
+    text-align: center;
+  }
+
+  #sectie2b {
+    grid-area: sectieb;
+    background-color: #ebddd5;
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    padding: 0px;
+  }
+
+  #sectie3 {
+    grid-area: sectiedrie;
+    background-color: white;
+    height: auto;
+    text-align: center;
+    margin: 0px auto;
+    padding: 0px;
+  }
+
+  #sectie3 h2, #sectie3 p {
+    padding: 20px 50px 0px 70px;
+    text-align: center;
+  }
+
+  #sectie3 > video {
+    padding-top: 20px;
+    height: 230px;
+    width: 130px;
+  }
+
+  #sectie3c {
+    grid-area: sectiec;
+    background-color: white;
+    width: auto;
+    margin: 0px auto;
+    text-align: center;
+    padding: 0px;
+  }
+
+  #sectie3c > video {
+    padding-top: 20px;
+    height: 200px;
+    width: 250px;
+  }
+
+  /* Slideshow */
+
+  #titel1 {
+    grid-area: titeleen;
+    background-color: white;
+    height: auto;
+    margin: 0px;
+    padding: 0px 50px;
+    text-align: center;
+  }
+
+  #titel1 > p {
+    width: 250px;
+    text-align: center;
+    margin: auto;
+  }
+
+  #titel2 {
+    grid-area: titeltwee;
+    background-color: #ebddd5;
+    height: auto;
+    margin: 0px;
+    padding: 0px 50px;
+    text-align: center;
+  }
+
+  #titel2 > p {
+    width: 250px;
+    text-align: center;
+    margin: auto;
+  }
+
+
+  #titel3 {
+    grid-area: titeldrie;
+    background-color: white;
+    height: auto;
+    margin: 0px;
+    padding: 0px 50px;
+    text-align: center;
+  }
+
+  #titel3 > p {
+    width: 250px;
+    text-align: center;
+    margin: auto;
+  }
+
+
+  #slideshow1 {
+    grid-area: slideshoween;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    
+    width: 100%;
+    height: 100%;
+  }
+
+  #slideshow2 {
+    grid-area: slideshowtwee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebddd5;
+    margin: 0px;
+    padding: 0px;
+    
+    width: 100%;
+    height: 100%;
+  }
+
+  #slideshow3 {
+    grid-area: slideshowdrie;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    
+    width: 100%;
+    height: 100%;
+  }
+
+  .card1 , .card2 , .card3{
+    position: relative;
+    
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  /*Light blue cover above the slide show*/
+  .card1::after , .card2::after , .card3::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 900;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card1_part{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 7;
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+    transform: translateX( 700px );
+    background-image: url("../images/fotografie/f1.png");
+    background-size: 100%;
+    
+    animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+  }
+
+
+  .card1_part.card1_part-two {
+    z-index: 6;
+    background-image: url("../images/fotografie/f2.png");
+    animation-delay: 7s;
+  }
+
+  .card1_part.card1_part-three {
+    z-index: 5;
+    background-image: url("../images/fotografie/f3.png");
+    animation-delay: 14s;
+  }
+
+  .card1_part.card1_part-four {
+    z-index: 4;
+    background-image: url("../images/fotografie/f6.png");
+    animation-delay: 21s;
+  }
+
+  .card2_part{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 7;
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+    transform: translateX( 700px );
+    background-image: url("../images/fotografie/b1.png");
+    background-size: 100%;
+    
+    animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+  }
+
+  .card2_part.card2_part-two {
+    z-index: 6;
+    background-image: url("../images/fotografie/b2.png");
+    animation-delay: 7s;
+  }
+
+  .card2_part.card2_part-three {
+    z-index: 5;
+    background-image: url("../images/fotografie/b3.png");
+    animation-delay: 14s;
+  }
+
+  .card2_part.card2_part-four {
+    z-index: 4;
+    background-image: url("../images/fotografie/b4.png");
+    animation-delay: 21s;
+  }
+
+  .card3_part{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 7;
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+    transform: translateX( 700px );
+    background-image: url("../images/fotografie/tr1.png");
+    background-size: 100%;
+    
+    animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+  }
+
+  .card3_part.card3_part-two {
+    z-index: 6;
+    background-image: url("../images/fotografie/tr2.png");
+    animation-delay: 7s;
+  }
+
+  .card3_part.card3_part-three {
+    z-index: 5;
+    background-image: url("../images/fotografie/tr3.png");
+    animation-delay: 14s;
+  }
+
+  .card3_part.card3_part-four {
+    z-index: 4;
+    background-image: url("../images/fotografie/tr6.png");
+    animation-delay: 21s;
+  }
+
+
+  @keyframes opaqTransition {
+    3% { transform: translateX( 0 ); }
+    25% { transform: translateX( 0 ); }
+    28% { transform: translateX( -700px ); }
+    100% { transform: translateX( -700px ); }
+  }
+
+  /* Contact */
+
+  #contact {
+    background: #ebddd5 url("../images/mobiel.png") no-repeat;
+    background-size: 100px;
+    background-position: 0px 750px;
+    height: 100%;
+    grid-area: contact;
+  }
+
 
 /* Schermgrootte 3 */
-@media only screen and (min-width: 740px) and (max-width: 999px) {
+@media only screen and (min-width: 661px) and (max-width: 900px) {
+
   body {
-    font-size: 16px;
-  }
-
-  h1 {
-    font-family: "Questrial" sans-serif;
+    font-family: 'Questrial', sans-serif;
+    color: #676767;
     font-weight: normal;
-    font-size: 40px;
-    color: #7b5459;
-    margin: 0px;
-  }
-
-  h2 {
-    font-family: "Questrial" sans-serif;
-    font-weight: normal;
-    font-size: 30px;
-    color: #B76E79;
+    text-align: left;
     padding: 0px;
     margin: 0px;
-  }
-
-}
-
-  /* Images */
-  /* Skills 
-  img.art {
-    width: 50%;
-    max-width: 350px;
-  }
-  /* Over 
-  .about {
-    padding-left: 25px;
-    width: 50%;
-    max-width: 300px
-  }
-
-     /* Menubalk 
-    .logo {
-      background-color: none;
-      padding-left: 20px;
-      display: inline;
-      height: 55px;
-    }
-
-    .logo img {
-      height: 55px;
-    }
-
-    header {
-      height: 55px;
-      width: 100%;
-      padding: 0px;
-      margin-top: 0px;
-      position: static;
-      background-color: white;
-    }
-
-      /* Div gecentreerde pagina, skills en over 
-      div.space {
-        margin: 0px auto;
-        padding: 20px 25px 10px 60px;
-        max-width: 90%;
-      }
-
-        /* Grid items index 
-        .grid-container-index {
-          display: grid;
-          max-width: 100%;
-          max-height: 100%;
-          padding: 20px 55px;
-          margin: 0px auto;
-          grid-template-areas: 
-          'skills skills portfolio portfolio portfolio over over';
-        }
-
-        .grid-item-skills {grid-area: skills;}
-        .grid-item-portfolio {grid-area: portfolio;}
-        .grid-item-over {grid-area: over;}
-
-        .grid-item-skills:hover, .grid-item-portfolio:hover, .grid-item-over:hover {
-            -webkit-filter: 
-                    drop-shadow(2px 2px 0 white)
-                    drop-shadow(-2px -2px 0 white);
-            filter: drop-shadow(2px 2px 0 white) 
-                    drop-shadow(-2px -2px 0 white);
-        }
-
-        .skills {
-          width: 100%;
-          text-align: right;
-          padding-top: 50px;
-        }
-        .laptop {
-          width: 98%;
-        }
-        .over {
-          width: 100%;
-        }
-
-          /* Grid portfolio 
-          .grid-item-bril {grid-area: bril;}
-          .grid-item-intro {grid-area: intro;}
-          .grid-item-buzzzle {grid-area: buzzzle;}
-          .grid-item-buzzz {grid-area: buzzz;}
-          .grid-item-foto {grid-area: foto;}
-          .grid-item-fotos {grid-area: fotos;}
-          .grid-item-ben {grid-area: ben;}
-          .grid-item-video {grid-area: video;}
-          .grid-item-kwf {grid-area: kwf;}
-          .grid-item-kwfproject {grid-area: kwfproject;}
-          .grid-item-boodschapp {grid-area: boodschapp;}
-          .grid-item-boodschapapp {grid-area: boodschapapp;}
-          .grid-item-puberbrein {grid-area: puberbrein;}
-          .grid-item-puber {grid-area: puber;}
-          .grid-item-zoetermeer {grid-area: zoetermeer;}
-          .grid-item-vitaal {grid-area: vitaal;}
-
-          .grid-container-portfolio {
-            display: grid;
-            padding: 20px 55px;
-            margin: 0px auto;
-            grid-gap: 20px;
-            max-width: 90%;
-            grid-template-areas: 
-            'bril intro intro '
-            'buzzzle buzzzle buzzzle'
-            'buzzz buzzz buzzz'
-            'foto foto foto'
-            'fotos fotos fotos'
-            'ben ben ben'
-            'video video video'
-            'kwf kwf kwf'
-            'kwfproject kwfproject kwfproject'
-            'boodschapp boodschapp boodschapp'
-            'boodschapapp boodschapapp boodschapapp'
-            'puberbrein puberbrein puberbrein'
-            'puber puber puber'
-            'zoetermeer zoetermeer zoetermeer'
-            'vitaal vitaal vitaal';
-          }
-
-          .grid-item-portfolio {
-            display: grid;
-          }
-
-          .bril {
-            height: 100px;
-          }
-          .buzzzle, .fotografie, .video, .kwf, .puber, .zoetermeer {
-            max-height: 300px;
-            max-width: 500px
-          }
-          .boodschap {
-            max-height: 300px;
-            padding-top: 10px;
-          }
-}
-
-/* Schermgrootte 4 */
-@media only screen and (min-width: 1000px) {
-  p {
-    font-size: 16px;
-    color: #676767;
+    max-height: 100%;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      'nav nav'
+      'opdrachttitel opdrachttitel'
+      'leftbutton rightbutton'
+      'sectieeen sectieeen'
+      'sectiea sectiea'
+      'sectietwee sectietwee'
+      'sectieb sectieb'
+      'sectiedrie sectiedrie'
+      'sectiec sectiec'
+      'titeleen titeleen'
+      'titeleen titeleen'
+      'slideshoween slideshoween'
+      'titeltwee titeltwee'
+      'slideshowtwee slideshowtwee'
+      'titeldrie titeldrie'
+      'slideshowdrie slideshowdrie'
+      'contact contact';
   }
 
   h1 {
-  font-family: 'Questrial', sans-serif;
-  font-weight: normal;
-  font-size: 50px;
+  font-family: "Questrial";
+  font-size: 23px;
   color: #7b5459;
   margin: 0px;
   }
 
   h2 {
-    font-family: 'Questrial', sans-serif;
-    font-size: 40px;
-    font-weight: normal;
+    font-family: "Questrial";
+    text-align: left;
+    font-size: 20px;
     color: #B76E79;
     padding: 0px;
     margin: 0px;
   }
 
-}
-
-  /* Images */
-  /* Skills 
-  img.art {
-    height: 350px;
+  img {
+    margin: 20px;
+    width: 250px;
   }
-  /* Over 
-  .about {
-    padding-left: 25px;
+
+  /* nav */
+  #nav {
+    position: fixed;
+    background-color: #ebddd5;
+    width: 100%;
+    z-index: 10;
+    grid-area: nav;
+    box-shadow: 0px 0px 10px 0px #CABDB3;
+  }
+
+  li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  .name {
+    float: left;
+  }
+
+  .menu {
+    float: left;
+  }
+
+  li > a {
+    text-decoration: none;
+    color: #7b5459;
+  }
+
+  a {
+    text-decoration: none;
+    color: #7b5459;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #B76E79;
+  }
+
+
+  /* Opdrachten portfolio*/
+
+  #leftbutton {
+    grid-area: leftbutton;
+    background-color: #ebddd5;
+    height: auto;
+    margin: 0px;
+    padding: 0px 0px 20px 30px;
+  }
+
+  button {
+    color: white;
+    background-color: #7b5459;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+  }
+
+  button:hover {
+    color: white;
+    background-color: #B76E79;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+
+  #rightbutton {
+    grid-area: rightbutton;
+    background-color: #ebddd5;
+    height: auto;
+    margin: 0px;
+    padding: 0px 30px 20px 0px;
+  }
+
+  #opdrachttitel {
+    grid-area: opdrachttitel;
+    background-color: #ebddd5;
+    height: 50px;
+    margin: 0px;
+    padding: 100px 0px 20px 0px;
+  }
+
+  #opdrachttitel > h1 {
+    margin: 0px auto;
+    text-align: center;
+  }
+
+  #sectie1 {
+    grid-area: sectieeen;
+    background-color: white;
+    height: auto;
+    margin: 0px auto;
+    padding: 0px;
+  }
+
+  #sectie1 h2, #sectie1 p {
+    padding: 20px 50px 0px 70px;
+    text-align: center;
+  }
+
+  #sectie1a {
+    grid-area: sectiea;
+    background-color: white;
+    width: auto;
+    margin: 0px auto;
+    text-align: center;
+    padding: 0px;
+  }
+
+  #sectie2 {
+    grid-area: sectietwee;
+    background-color: #ebddd5;
+    height: auto;
+    margin: 0px auto;
+    padding: 0px;
+  }
+
+  #sectie2 h2, #sectie2 p {
+    padding: 20px 50px 0px 70px;
+    text-align: center;
+  }
+
+  #sectie2b {
+    grid-area: sectieb;
+    background-color: #ebddd5;
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    padding: 0px;
+  }
+
+  #sectie3 {
+    grid-area: sectiedrie;
+    background-color: white;
+    height: auto;
+    text-align: center;
+    margin: 0px auto;
+    padding: 0px;
+  }
+
+  #sectie3 h2, #sectie3 p {
+    padding: 20px 50px 0px 70px;
+    text-align: center;
+  }
+
+  #sectie3 > video {
+    padding-top: 20px;
+    height: 230px;
+    width: 130px;
+  }
+
+  #sectie3c {
+    grid-area: sectiec;
+    background-color: white;
+    width: auto;
+    margin: 0px auto;
+    text-align: center;
+    padding: 0px;
+  }
+
+  #sectie3c > video {
+    padding-top: 20px;
+    height: 200px;
+    width: 250px;
+  }
+
+  /* Slideshow */
+
+  #titel1 {
+    grid-area: titeleen;
+    background-color: white;
+    height: auto;
+    margin: 0px;
+    padding: 0px 50px;
+    text-align: center;
+  }
+
+  #titel1 > p {
+    width: 250px;
+    text-align: center;
+    margin: auto;
+  }
+
+  #titel2 {
+    grid-area: titeltwee;
+    background-color: #ebddd5;
+    height: auto;
+    margin: 0px;
+    padding: 0px 50px;
+    text-align: center;
+  }
+
+  #titel2 > p {
+    width: 250px;
+    text-align: center;
+    margin: auto;
+  }
+
+
+  #titel3 {
+    grid-area: titeldrie;
+    background-color: white;
+    height: auto;
+    margin: 0px;
+    padding: 0px 50px;
+    text-align: center;
+  }
+
+  #titel3 > p {
+    width: 250px;
+    text-align: center;
+    margin: auto;
+  }
+
+
+  #slideshow1 {
+    grid-area: slideshoween;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    
+    width: 100%;
+    height: 100%;
+  }
+
+  #slideshow2 {
+    grid-area: slideshowtwee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebddd5;
+    margin: 0px;
+    padding: 0px;
+    
+    width: 100%;
+    height: 100%;
+  }
+
+  #slideshow3 {
+    grid-area: slideshowdrie;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    
+    width: 100%;
+    height: 100%;
+  }
+
+  .card1 , .card2 , .card3{
+    position: relative;
+    
     width: 300px;
+    height: 200px;
+    overflow: hidden;
+
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   }
 
-     /* Menubalk 
-    .logo {
-      background-color: none;
-      padding-left: 20px;
-      display: inline;
-      height: 55px;
-    }
+  /*Light blue cover above the slide show*/
+  .card1::after , .card2::after , .card3::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 900;
 
-    .logo img {
-      height: 55px;
-    }
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 
-      /* Div gecentreerde pagina, skills en over 
-      div.space {
-        margin: 0px auto;
-        padding: 20px 25px 10px 60px;
-        max-width: 90%;
-      }
+  .card1_part{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 7;
 
-        /* Grid items index 
-        .grid-container-index {
-          display: grid;
-          max-width: 100%;
-          max-height: 100%;
-          padding: 20px 55px;
-          margin: 0px auto;
-          grid-template-areas: 
-          'skills skills portfolio portfolio portfolio over over';
-        }
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+    transform: translateX( 700px );
+    background-image: url("../images/fotografie/f1.png");
+    background-size: 100%;
+    
+    animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+  }
 
-        .grid-item-skills {grid-area: skills;}
-        .grid-item-portfolio {grid-area: portfolio;}
-        .grid-item-over {grid-area: over;}
 
-        .grid-item-skills:hover, .grid-item-portfolio:hover, .grid-item-over:hover {
-            -webkit-filter: 
-                    drop-shadow(2px 2px 0 white)
-                    drop-shadow(-2px -2px 0 white);
-            filter: drop-shadow(2px 2px 0 white) 
-                    drop-shadow(-2px -2px 0 white);
-        }
+  .card1_part.card1_part-two {
+    z-index: 6;
+    background-image: url("../images/fotografie/f2.png");
+    animation-delay: 7s;
+  }
 
-        .skills {
-          width: 100%;
-          padding-top: 50px;
-        }
-        .laptop {
-          width: 98%;
-        }
-        .over {
-          width: 100%;
-        }
+  .card1_part.card1_part-three {
+    z-index: 5;
+    background-image: url("../images/fotografie/f3.png");
+    animation-delay: 14s;
+  }
 
-          /* Grid portfolio 
-          .grid-item-bril {grid-area: bril;}
-          .grid-item-intro {grid-area: intro;}
-          .grid-item-buzzzle {grid-area: buzzzle;}
-          .grid-item-buzzz {
-            grid-area: buzzz;
-            padding-top: 70px;
-          }
-          .grid-item-foto {grid-area: foto;}
-          .grid-item-fotos {
-            grid-area: fotos;
-            padding-top: 70px;
-          }
-          .grid-item-ben {grid-area: ben;}
-          .grid-item-video {
-            grid-area: video;
-            padding-top: 70px;
-          }
-          .grid-item-kwf {grid-area: kwf;}
-          .grid-item-kwfproject {
-            grid-area: kwfproject;
-            padding-top: 50px;
-          }
-          .grid-item-boodschapp {grid-area: boodschapp;}
-          .grid-item-boodschapapp {
-            grid-area: boodschapapp;
-            padding-top: 70px;
-          }
-          .grid-item-puberbrein {grid-area: puberbrein;}
-          .grid-item-puber {
-            grid-area: puber;
-            padding-top: 70px;
-          }
-          .grid-item-zoetermeer {grid-area: zoetermeer;}
-          .grid-item-vitaal {
-            grid-area: vitaal;
-            padding-top: 70px;
-          }
+  .card1_part.card1_part-four {
+    z-index: 4;
+    background-image: url("../images/fotografie/f6.png");
+    animation-delay: 21s;
+  }
 
-          .grid-container-portfolio {
-            display: grid;
-            padding: 20px 55px;
-            margin: 0px auto;
-            grid-gap: 20px;
-            max-width: 90%;
-            grid-template-areas: 
-            'bril intro intro'
-            'buzzzle buzzzle buzzz'
-            'foto foto fotos'
-            'ben ben video'
-            'kwf kwf kwfproject'
-            'boodschapp boodschapp boodschapapp'
-            'puberbrein puberbrein puber'
-            'zoetermeer zoetermeer vitaal';
-          }
+  .card2_part{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 7;
 
-          .grid-item-portfolio {
-            display: grid;
-          }
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+    transform: translateX( 700px );
+    background-image: url("../images/fotografie/b1.png");
+    background-size: 100%;
+    
+    animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+  }
 
-          .bril {
-            width: 200px;
-          }
-          .buzzzle, .fotografie, .video, .kwf, .puber, .zoetermeer {
-            width: 500px;
-          }
-          .boodschap {
-            height: 350px;
-            padding-top: 70px;
-          }
-          /* images over 
-          .about {
-            padding-left: 50px;
-          }
+  .card2_part.card2_part-two {
+    z-index: 6;
+    background-image: url("../images/fotografie/b2.png");
+    animation-delay: 7s;
+  }
+
+  .card2_part.card2_part-three {
+    z-index: 5;
+    background-image: url("../images/fotografie/b3.png");
+    animation-delay: 14s;
+  }
+
+  .card2_part.card2_part-four {
+    z-index: 4;
+    background-image: url("../images/fotografie/b4.png");
+    animation-delay: 21s;
+  }
+
+  .card3_part{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 7;
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+    transform: translateX( 700px );
+    background-image: url("../images/fotografie/tr1.png");
+    background-size: 100%;
+    
+    animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+  }
+
+  .card3_part.card3_part-two {
+    z-index: 6;
+    background-image: url("../images/fotografie/tr2.png");
+    animation-delay: 7s;
+  }
+
+  .card3_part.card3_part-three {
+    z-index: 5;
+    background-image: url("../images/fotografie/tr3.png");
+    animation-delay: 14s;
+  }
+
+  .card3_part.card3_part-four {
+    z-index: 4;
+    background-image: url("../images/fotografie/tr6.png");
+    animation-delay: 21s;
+  }
+
+
+  @keyframes opaqTransition {
+    3% { transform: translateX( 0 ); }
+    25% { transform: translateX( 0 ); }
+    28% { transform: translateX( -700px ); }
+    100% { transform: translateX( -700px ); }
+  }
+
+  /* Contact */
+
+  #contact {
+    background: #ebddd5 url("../images/mobiel.png") no-repeat;
+    background-size: 100px;
+    background-position: 0px 750px;
+    height: 100%;
+    grid-area: contact;
+  }
+
+
+/* Schermgrootte 4 */
+@media only screen and (min-width: 901px) {
+
+  body {
+    font-family: 'Questrial', sans-serif;
+    color: #676767;
+    font-weight: normal;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+    max-height: 100%;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      'nav nav'
+      'opdrachttitel opdrachttitel'
+      'leftbutton rightbutton'
+      'sectieeen sectieeen'
+      'sectiea sectiea'
+      'sectietwee sectietwee'
+      'sectieb sectieb'
+      'sectiedrie sectiedrie'
+      'sectiec sectiec'
+      'titeleen titeleen'
+      'titeleen titeleen'
+      'slideshoween slideshoween'
+      'titeltwee titeltwee'
+      'slideshowtwee slideshowtwee'
+      'titeldrie titeldrie'
+      'slideshowdrie slideshowdrie'
+      'contact contact';
+  }
+
+  h1 {
+  font-family: "Questrial";
+  font-size: 23px;
+  color: #7b5459;
+  margin: 0px;
+  }
+
+  h2 {
+    font-family: "Questrial";
+    text-align: left;
+    font-size: 20px;
+    color: #B76E79;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  img {
+    margin: 20px;
+    width: 250px;
+  }
+
+  /* nav */
+  #nav {
+    position: fixed;
+    background-color: #ebddd5;
+    width: 100%;
+    z-index: 10;
+    grid-area: nav;
+    box-shadow: 0px 0px 10px 0px #CABDB3;
+  }
+
+  li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  .name {
+    float: left;
+  }
+
+  .menu {
+    float: left;
+  }
+
+  li > a {
+    text-decoration: none;
+    color: #7b5459;
+  }
+
+  a {
+    text-decoration: none;
+    color: #7b5459;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #B76E79;
+  }
+
+
+  /* Opdrachten portfolio*/
+
+  #leftbutton {
+    grid-area: leftbutton;
+    background-color: #ebddd5;
+    height: auto;
+    margin: 0px;
+    padding: 0px 0px 20px 30px;
+  }
+
+  button {
+    color: white;
+    background-color: #7b5459;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+  }
+
+  button:hover {
+    color: white;
+    background-color: #B76E79;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+
+  #rightbutton {
+    grid-area: rightbutton;
+    background-color: #ebddd5;
+    height: auto;
+    margin: 0px;
+    padding: 0px 30px 20px 0px;
+  }
+
+  #opdrachttitel {
+    grid-area: opdrachttitel;
+    background-color: #ebddd5;
+    height: 50px;
+    margin: 0px;
+    padding: 100px 0px 20px 0px;
+  }
+
+  #opdrachttitel > h1 {
+    margin: 0px auto;
+    text-align: center;
+  }
+
+  #sectie1 {
+    grid-area: sectieeen;
+    background-color: white;
+    height: auto;
+    margin: 0px auto;
+    padding: 0px;
+  }
+
+  #sectie1 h2, #sectie1 p {
+    padding: 20px 50px 0px 70px;
+    text-align: center;
+  }
+
+  #sectie1a {
+    grid-area: sectiea;
+    background-color: white;
+    width: auto;
+    margin: 0px auto;
+    text-align: center;
+    padding: 0px;
+  }
+
+  #sectie2 {
+    grid-area: sectietwee;
+    background-color: #ebddd5;
+    height: auto;
+    margin: 0px auto;
+    padding: 0px;
+  }
+
+  #sectie2 h2, #sectie2 p {
+    padding: 20px 50px 0px 70px;
+    text-align: center;
+  }
+
+  #sectie2b {
+    grid-area: sectieb;
+    background-color: #ebddd5;
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    padding: 0px;
+  }
+
+  #sectie3 {
+    grid-area: sectiedrie;
+    background-color: white;
+    height: auto;
+    text-align: center;
+    margin: 0px auto;
+    padding: 0px;
+  }
+
+  #sectie3 h2, #sectie3 p {
+    padding: 20px 50px 0px 70px;
+    text-align: center;
+  }
+
+  #sectie3 > video {
+    padding-top: 20px;
+    height: 230px;
+    width: 130px;
+  }
+
+  #sectie3c {
+    grid-area: sectiec;
+    background-color: white;
+    width: auto;
+    margin: 0px auto;
+    text-align: center;
+    padding: 0px;
+  }
+
+  #sectie3c > video {
+    padding-top: 20px;
+    height: 200px;
+    width: 250px;
+  }
+
+  /* Slideshow */
+
+  #titel1 {
+    grid-area: titeleen;
+    background-color: white;
+    height: auto;
+    margin: 0px;
+    padding: 0px 50px;
+    text-align: center;
+  }
+
+  #titel1 > p {
+    width: 250px;
+    text-align: center;
+    margin: auto;
+  }
+
+  #titel2 {
+    grid-area: titeltwee;
+    background-color: #ebddd5;
+    height: auto;
+    margin: 0px;
+    padding: 0px 50px;
+    text-align: center;
+  }
+
+  #titel2 > p {
+    width: 250px;
+    text-align: center;
+    margin: auto;
+  }
+
+
+  #titel3 {
+    grid-area: titeldrie;
+    background-color: white;
+    height: auto;
+    margin: 0px;
+    padding: 0px 50px;
+    text-align: center;
+  }
+
+  #titel3 > p {
+    width: 250px;
+    text-align: center;
+    margin: auto;
+  }
+
+
+  #slideshow1 {
+    grid-area: slideshoween;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    
+    width: 100%;
+    height: 100%;
+  }
+
+  #slideshow2 {
+    grid-area: slideshowtwee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebddd5;
+    margin: 0px;
+    padding: 0px;
+    
+    width: 100%;
+    height: 100%;
+  }
+
+  #slideshow3 {
+    grid-area: slideshowdrie;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    
+    width: 100%;
+    height: 100%;
+  }
+
+  .card1 , .card2 , .card3{
+    position: relative;
+    
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  /*Light blue cover above the slide show*/
+  .card1::after , .card2::after , .card3::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 900;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card1_part{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 7;
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+    transform: translateX( 700px );
+    background-image: url("../images/fotografie/f1.png");
+    background-size: 100%;
+    
+    animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+  }
+
+
+  .card1_part.card1_part-two {
+    z-index: 6;
+    background-image: url("../images/fotografie/f2.png");
+    animation-delay: 7s;
+  }
+
+  .card1_part.card1_part-three {
+    z-index: 5;
+    background-image: url("../images/fotografie/f3.png");
+    animation-delay: 14s;
+  }
+
+  .card1_part.card1_part-four {
+    z-index: 4;
+    background-image: url("../images/fotografie/f6.png");
+    animation-delay: 21s;
+  }
+
+  .card2_part{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 7;
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+    transform: translateX( 700px );
+    background-image: url("../images/fotografie/b1.png");
+    background-size: 100%;
+    
+    animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+  }
+
+  .card2_part.card2_part-two {
+    z-index: 6;
+    background-image: url("../images/fotografie/b2.png");
+    animation-delay: 7s;
+  }
+
+  .card2_part.card2_part-three {
+    z-index: 5;
+    background-image: url("../images/fotografie/b3.png");
+    animation-delay: 14s;
+  }
+
+  .card2_part.card2_part-four {
+    z-index: 4;
+    background-image: url("../images/fotografie/b4.png");
+    animation-delay: 21s;
+  }
+
+  .card3_part{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 7;
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+    transform: translateX( 700px );
+    background-image: url("../images/fotografie/tr1.png");
+    background-size: 100%;
+    
+    animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+  }
+
+  .card3_part.card3_part-two {
+    z-index: 6;
+    background-image: url("../images/fotografie/tr2.png");
+    animation-delay: 7s;
+  }
+
+  .card3_part.card3_part-three {
+    z-index: 5;
+    background-image: url("../images/fotografie/tr3.png");
+    animation-delay: 14s;
+  }
+
+  .card3_part.card3_part-four {
+    z-index: 4;
+    background-image: url("../images/fotografie/tr6.png");
+    animation-delay: 21s;
+  }
+
+
+  @keyframes opaqTransition {
+    3% { transform: translateX( 0 ); }
+    25% { transform: translateX( 0 ); }
+    28% { transform: translateX( -700px ); }
+    100% { transform: translateX( -700px ); }
+  }
+
+  /* Contact */
+
+  #contact {
+    background: #ebddd5 url("../images/mobiel.png") no-repeat;
+    background-size: 100px;
+    background-position: 0px 750px;
+    height: 100%;
+    grid-area: contact;
+  }
+
 }

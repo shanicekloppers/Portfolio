@@ -6,8 +6,47 @@ html {
   background-attachment: fixed;
 }
 
+/* Social Media Buttons */
+
+  .icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+
+  .icon-bar a:hover {
+    background-color: #ae9287;
+  }
+
+  .phone {
+    background: #89ae85;
+    color: white;
+  }
+
+  .email {
+    background: #d4554c;
+    color: white;
+  }
+
+  .linkedin {
+    background: #0688bc;
+    color: white;
+  }
+
+
 /* Responsiveness */
-/* Schergrootte 1 */
+/* Schermgrootte 1 */
 @media only screen and (max-width: 480px) {
 
   body {
@@ -197,44 +236,6 @@ html {
     background-position: 0px 750px;
     height: 100%;
     grid-area: contact;
-  }
-
-  /* Social Media Buttons */
-
-  .icon-bar {
-    position: fixed;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-
-  .icon-bar a {
-    display: block;
-    text-align: center;
-    padding: 16px;
-    transition: all 0.3s ease;
-    color: white;
-    font-size: 20px;
-  }
-
-  .icon-bar a:hover {
-    background-color: #ae9287;
-  }
-
-  .phone {
-    background: #89ae85;
-    color: white;
-  }
-
-  .email {
-    background: #d4554c;
-    color: white;
-  }
-
-  .linkedin {
-    background: #0688bc;
-    color: white;
   }
 }
 
@@ -429,45 +430,8 @@ html {
     height: 100%;
     grid-area: contact;
   }
-
-  /* Social Media Buttons */
-
-  .icon-bar {
-    position: fixed;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-
-  .icon-bar a {
-    display: block;
-    text-align: center;
-    padding: 16px;
-    transition: all 0.3s ease;
-    color: white;
-    font-size: 20px;
-  }
-
-  .icon-bar a:hover {
-    background-color: #ae9287;
-  }
-
-  .phone {
-    background: #89ae85;
-    color: white;
-  }
-
-  .email {
-    background: #d4554c;
-    color: white;
-  }
-
-  .linkedin {
-    background: #0688bc;
-    color: white;
-  }
 }
+
 
 /* Schermgrootte 3 */
 @media only screen and (min-width: 661px) and (max-width: 900px) {
@@ -657,45 +621,8 @@ html {
     height: 100%;
     grid-area: contact;
   }
-
-  /* Social Media Buttons */
-
-  .icon-bar {
-    position: fixed;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-
-  .icon-bar a {
-    display: block;
-    text-align: center;
-    padding: 16px;
-    transition: all 0.3s ease;
-    color: white;
-    font-size: 20px;
-  }
-
-  .icon-bar a:hover {
-    background-color: #ae9287;
-  }
-
-  .phone {
-    background: #89ae85;
-    color: white;
-  }
-
-  .email {
-    background: #d4554c;
-    color: white;
-  }
-
-  .linkedin {
-    background: #0688bc;
-    color: white;
-  }
 }
+
 
 /* Schermgrootte 4 */
 @media only screen and (min-width: 901px) {
@@ -881,43 +808,4 @@ html {
     height: 100%;
     grid-area: contact;
   }
-
-  /* Social Media Buttons */
-
-  .icon-bar {
-    position: fixed;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-
-  .icon-bar a {
-    display: block;
-    text-align: center;
-    padding: 16px;
-    transition: all 0.3s ease;
-    color: white;
-    font-size: 20px;
-  }
-
-  .icon-bar a:hover {
-    background-color: #ae9287;
-  }
-
-  .phone {
-    background: #89ae85;
-    color: white;
-  }
-
-  .email {
-    background: #d4554c;
-    color: white;
-  }
-
-  .linkedin {
-    background: #0688bc;
-    color: white;
-  }
-
 }
