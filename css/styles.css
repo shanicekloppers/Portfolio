@@ -19,12 +19,13 @@ html {
     max-height: 100%;
     display: grid;
     grid-template-areas:
-      'nav nav nav'
-      'box box illu'
-      'about about about'
-      'portfolio portfolio portfolio'
-      'contact contact contact';
-    grid-template-columns: 33% 33% 33%;
+      'nav nav'
+      'box box'
+      'illu illu'
+      'about about'
+      'portfolio portfolio'
+      'contact contact';
+    grid-template-columns: 50% 50%;
   }
 
   a {
@@ -71,7 +72,7 @@ html {
 
   li {
     display: inline;
-    margin-right: 50px;
+    margin-right: 20px;
   }
 
   .name {
@@ -79,7 +80,7 @@ html {
   }
 
   .menu {
-    float: right;
+    float: left;
   }
 
   li > a {
@@ -91,11 +92,12 @@ html {
   .box {
     background-color: white;
     grid-area: box;
+    height: 300px;
   }
 
   .headertekst {
     position: absolute;
-    margin-top: 25%;
+    margin-top: 150px;
     margin-left: 25%;
   }
 
@@ -104,13 +106,13 @@ html {
   .illustration {
     grid-area: illu;
     height: auto;
-    margin: 0px;
+    margin: 0px 0px 0px 70px;
     padding: 0px;
   }
 
   .illustration > img {
-    height: 500px;
-    margin-top: 100px;
+    height: 400px;
+    margin-top: 10px;
     margin-bottom: -10px;
     padding: 0px;
   }
@@ -119,7 +121,6 @@ html {
 
   #about {
     background-color: #ebddd5;
-    height: 80%;
     grid-area: about;
     vertical-align: text-top;
     padding: 100px;
@@ -132,11 +133,11 @@ html {
 
   img.align-right {
     float: right;
-    margin-left: 10px;
+    margin: 20px 0px;
   }
 
   img.medium {
-    height: 300px;
+    height: 200px;
   }
 
   /* portfolio */
@@ -145,7 +146,7 @@ html {
     background-color: white;
     height: 80%;
     grid-area: portfolio;
-    padding: 100px;
+    padding: 50px;
   }
 
   #opdrachten {
@@ -168,15 +169,15 @@ html {
   .grid {
     background-color: #ebddd5;
     max-width: 300px;
-    height: 20rem;
+    height: 200px;
     margin: 0px auto;
-    padding: 1rem;
+    padding-top: 1rem;
     border-radius: 10px;
     border: 5px solid transparent;
   }
 
   .grid img {
-    height: 80%;
+    height: 70%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -192,8 +193,8 @@ html {
 
   #contact {
     background: #ebddd5 url("../images/mobiel.png") no-repeat;
-    background-size: 300px;
-    background-position: 50px 0px;
+    background-size: 100px;
+    background-position: 0px 750px;
     height: 100%;
     grid-area: contact;
   }
@@ -237,10 +238,8 @@ html {
   }
 }
 
-
-
 /* Schermgrootte 2 */
-@media only screen and (min-width: 481px) and (max-width: 739px) {
+@media only screen and (min-width: 481px) and (max-width: 660px) {
 
   body {
     font-family: 'Questrial', sans-serif;
@@ -251,12 +250,244 @@ html {
     max-height: 100%;
     display: grid;
     grid-template-areas:
-      'nav nav nav'
-      'box box illu'
-      'about about about'
-      'portfolio portfolio portfolio'
-      'contact contact contact';
-    grid-template-columns: 33% 33% 33%;
+      'nav nav'
+      'box box'
+      'illu illu'
+      'about about'
+      'portfolio portfolio'
+      'contact contact';
+    grid-template-columns: 50% 50%;
+  }
+
+  a {
+    text-decoration: none;
+    color: #7b5459;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #B76E79;
+  }
+  p {
+    font-size: 12px;
+    color: #676767;
+  }
+
+  h1 {
+  font-family: 'Questrial', sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+  color: #7b5459;
+  margin: 0px 0px 10px 0px;
+  }
+
+  h2 {
+    font-family: 'Questrial', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    color: #B76E79;
+    padding: 0px;
+    margin: 0px 0px 20px 0px;
+  }
+
+  /* nav */
+  #nav {
+    position: fixed;
+    background-color: #ebddd5;
+    width: 100%;
+    z-index: 10;
+    grid-area: nav;
+    box-shadow: 0px 0px 10px 0px #CABDB3;
+  }
+
+  li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  .name {
+    float: left;
+  }
+
+  .menu {
+    float: left;
+  }
+
+  li > a {
+    text-decoration: none;
+    color: #7b5459;
+  }
+
+  /* Introduction grid */
+  .box {
+    background-color: white;
+    grid-area: box;
+    height: 300px;
+  }
+
+  .headertekst {
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 25%;
+  }
+
+  /* intro illustratie */
+
+  .illustration {
+    grid-area: illu;
+    height: auto;
+    margin: 0px auto;
+    padding: 0px;
+  }
+
+  .illustration > img {
+    height: 400px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    padding: 0px;
+  }
+
+  /* Over tekst */
+
+  #about {
+    background-color: #ebddd5;
+    grid-area: about;
+    vertical-align: text-top;
+    padding: 100px;
+  }
+
+  img.align-left {
+    float: left;
+    margin: 0px 30px 30px 0px;
+  }
+
+  img.align-right {
+    float: right;
+    margin: 20px 0px;
+  }
+
+  img.medium {
+    height: 200px;
+  }
+
+  /* portfolio */
+
+  #portfolio {
+    background-color: white;
+    height: 80%;
+    grid-area: portfolio;
+    padding: 50px;
+  }
+
+  #opdrachten {
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      'spijkkeuren' 
+      'illustrator' 
+      'fotografie'
+      'humanitas' 
+      'contentcanvas' 
+      'ben'
+      'evalytics'
+      'kwf' 
+      'boodschap';
+  }
+
+  .grid {
+    background-color: #ebddd5;
+    max-width: 300px;
+    height: 200px;
+    margin: 0px auto;
+    padding-top: 1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+  }
+
+  .grid img {
+    height: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .grid:hover {
+    -moz-box-shadow: 0 0 10px #777777;
+    -webkit-box-shadow: 0 0 10px #777777;
+    box-shadow: 0 0 10px #777777;
+  }
+
+  /* Contact */
+
+  #contact {
+    background: #ebddd5 url("../images/mobiel.png") no-repeat;
+    background-size: 100px;
+    background-position: 50px 740px;
+    height: 100%;
+    grid-area: contact;
+  }
+
+  /* Social Media Buttons */
+
+  .icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+
+  .icon-bar a:hover {
+    background-color: #ae9287;
+  }
+
+  .phone {
+    background: #89ae85;
+    color: white;
+  }
+
+  .email {
+    background: #d4554c;
+    color: white;
+  }
+
+  .linkedin {
+    background: #0688bc;
+    color: white;
+  }
+}
+
+/* Schermgrootte 3 */
+@media only screen and (min-width: 661px) and (max-width: 900px) {
+
+  body {
+    font-family: 'Questrial', sans-serif;
+    font-weight: normal;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+    max-height: 100%;
+    display: grid;
+    grid-template-areas:
+      'nav nav'
+      'box box'
+      'illu illu'
+      'about about'
+      'portfolio portfolio'
+      'contact contact';
+    grid-template-columns: 50% 50%;
   }
 
   a {
@@ -303,7 +534,7 @@ html {
 
   li {
     display: inline;
-    margin-right: 50px;
+    margin-right: 40px;
   }
 
   .name {
@@ -323,11 +554,12 @@ html {
   .box {
     background-color: white;
     grid-area: box;
+    height: 200px;
   }
 
   .headertekst {
     position: absolute;
-    margin-top: 25%;
+    margin-top: 100px;
     margin-left: 25%;
   }
 
@@ -336,244 +568,13 @@ html {
   .illustration {
     grid-area: illu;
     height: auto;
-    margin: 0px;
-    padding: 0px;
-  }
-
-  .illustration > img {
-    height: 500px;
-    margin-top: 100px;
-    margin-bottom: -10px;
-    padding: 0px;
-  }
-
-  /* Over tekst */
-
-  #about {
-    background-color: #ebddd5;
-    height: 80%;
-    grid-area: about;
-    vertical-align: text-top;
-    padding: 100px;
-  }
-
-  img.align-left {
-    float: left;
-    margin: 0px 30px 30px 0px;
-  }
-
-  img.align-right {
-    float: right;
-    margin-left: 10px;
-  }
-
-  img.medium {
-    height: 300px;
-  }
-
-  /* portfolio */
-
-  #portfolio {
-    background-color: white;
-    height: 80%;
-    grid-area: portfolio;
-    padding: 100px;
-  }
-
-  #opdrachten {
-    display: grid;
-    grid-gap: 1rem;
-    padding: 1rem;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-      'spijkkeuren' 
-      'illustrator'
-      'fotografie' 
-      'humanitas' 
-      'contentcanvas' 
-      'ben'
-      'evalytics'
-      'kwf' 
-      'boodschap';
-  }
-
-  .grid {
-    background-color: #ebddd5;
-    max-width: 300px;
-    height: 20rem;
     margin: 0px auto;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 5px solid transparent;
-  }
-
-  .grid img {
-    height: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .grid:hover {
-    -moz-box-shadow: 0 0 10px #777777;
-    -webkit-box-shadow: 0 0 10px #777777;
-    box-shadow: 0 0 10px #777777;
-  }
-
-  /* Contact */
-
-  #contact {
-    background: #ebddd5 url("../images/mobiel.png") no-repeat;
-    background-size: 300px;
-    background-position: 50px 0px;
-    height: 100%;
-    grid-area: contact;
-  }
-
-  /* Social Media Buttons */
-
-  .icon-bar {
-    position: fixed;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-
-  .icon-bar a {
-    display: block;
-    text-align: center;
-    padding: 16px;
-    transition: all 0.3s ease;
-    color: white;
-    font-size: 20px;
-  }
-
-  .icon-bar a:hover {
-    background-color: #ae9287;
-  }
-
-  .phone {
-    background: #89ae85;
-    color: white;
-  }
-
-  .email {
-    background: #d4554c;
-    color: white;
-  }
-
-  .linkedin {
-    background: #0688bc;
-    color: white;
-  }
-}
-
-
-/* Schermgrootte 3 */
-@media only screen and (min-width: 740px) and (max-width: 999px) {
-
-  body {
-    font-family: 'Questrial', sans-serif;
-    font-weight: normal;
-    text-align: left;
-    padding: 0px;
-    margin: 0px;
-    max-height: 100%;
-    display: grid;
-    grid-template-areas:
-      'nav nav nav'
-      'box box illu'
-      'about about about'
-      'portfolio portfolio portfolio'
-      'contact contact contact';
-    grid-template-columns: 33% 33% 33%;
-  }
-
-  a {
-    text-decoration: none;
-    color: #7b5459;
-  }
-
-  a:hover {
-    text-decoration: none;
-    color: #B76E79;
-  }
-  p {
-    font-size: 16px;
-    color: #676767;
-  }
-
-  h1 {
-  font-family: 'Questrial', sans-serif;
-  font-weight: normal;
-  font-size: 40px;
-  color: #7b5459;
-  margin: 0px 0px 10px 0px;
-  }
-
-  h2 {
-    font-family: 'Questrial', sans-serif;
-    font-size: 30px;
-    font-weight: normal;
-    text-align: center;
-    color: #B76E79;
-    padding: 0px;
-    margin: 0px 0px 20px 0px;
-  }
-
-  /* nav */
-  #nav {
-    position: fixed;
-    background-color: #ebddd5;
-    width: 100%;
-    z-index: 10;
-    grid-area: nav;
-    box-shadow: 0px 0px 10px 0px #CABDB3;
-  }
-
-  li {
-    display: inline;
-    margin-right: 50px;
-  }
-
-  .name {
-    float: left;
-  }
-
-  .menu {
-    float: right;
-  }
-
-  li > a {
-    text-decoration: none;
-    color: #7b5459;
-  }
-
-  /* Introduction grid */
-  .box {
-    background-color: white;
-    grid-area: box;
-  }
-
-  .headertekst {
-    position: absolute;
-    margin-top: 25%;
-    margin-left: 25%;
-  }
-
-  /* intro illustratie */
-
-  .illustration {
-    grid-area: illu;
-    height: auto;
-    margin: 0px;
     padding: 0px;
   }
 
   .illustration > img {
     height: 500px;
-    margin-top: 100px;
+    margin-top: 20px;
     margin-bottom: -10px;
     padding: 0px;
   }
@@ -590,7 +591,7 @@ html {
 
   img.align-left {
     float: left;
-    margin: 0px 30px 30px 0px;
+    margin: 10px 30px 30px 0px;
   }
 
   img.align-right {
@@ -599,7 +600,7 @@ html {
   }
 
   img.medium {
-    height: 300px;
+    height: 200px;
   }
 
   /* portfolio */
@@ -608,7 +609,7 @@ html {
     background-color: white;
     height: 80%;
     grid-area: portfolio;
-    padding: 100px;
+    padding: 15%;
   }
 
   #opdrachten {
@@ -620,14 +621,14 @@ html {
       'spijkkeuren illustrator'
       'fotografie humanitas' 
       'contentcanvas ben'
-      'evalytics kwf'
+      'evalytics kwf' 
       'boodschap none';
   }
 
   .grid {
     background-color: #ebddd5;
-    max-width: 300px;
-    height: 20rem;
+    max-width: 200px;
+    height: 17rem;
     margin: 0px auto;
     padding: 1rem;
     border-radius: 10px;
@@ -635,7 +636,7 @@ html {
   }
 
   .grid img {
-    height: 80%;
+    height: 200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -651,8 +652,8 @@ html {
 
   #contact {
     background: #ebddd5 url("../images/mobiel.png") no-repeat;
-    background-size: 300px;
-    background-position: 50px 0px;
+    background-size: 100px;
+    background-position: 150px 740px;
     height: 100%;
     grid-area: contact;
   }
@@ -697,7 +698,7 @@ html {
 }
 
 /* Schermgrootte 4 */
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 901px) {
   body {
     font-family: 'Questrial', sans-serif;
     font-weight: normal;
@@ -779,6 +780,7 @@ html {
   .box {
     background-color: white;
     grid-area: box;
+    height: 600px;
   }
 
   .headertekst {
@@ -874,7 +876,7 @@ html {
 
   #contact {
     background: #ebddd5 url("../images/mobiel.png") no-repeat;
-    background-size: 300px;
+    background-size: 250px;
     background-position: 50px 0px;
     height: 100%;
     grid-area: contact;
