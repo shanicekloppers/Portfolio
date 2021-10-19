@@ -557,7 +557,7 @@ html {
 
   img {
     margin: 20px;
-    width: 250px;
+    width: 350px;
   }
 
   /* nav */
@@ -580,7 +580,7 @@ html {
   }
 
   .menu {
-    float: left;
+    float: right;
   }
 
   li > a {
@@ -707,8 +707,8 @@ html {
 
   #sectie3 > video {
     padding-top: 20px;
-    height: 230px;
-    width: 130px;
+    height: 400px;
+    width: 200px;
   }
 
   #sectie3c {
@@ -722,8 +722,8 @@ html {
 
   #sectie3c > video {
     padding-top: 20px;
-    height: 200px;
-    width: 250px;
+    height: 300px;
+    width: 350px;
   }
 
   /* Slideshow */
@@ -738,7 +738,7 @@ html {
   }
 
   #titel1 > p {
-    width: 250px;
+    width: 350px;
     text-align: center;
     margin: auto;
   }
@@ -753,7 +753,7 @@ html {
   }
 
   #titel2 > p {
-    width: 250px;
+    width: 350px;
     text-align: center;
     margin: auto;
   }
@@ -769,7 +769,7 @@ html {
   }
 
   #titel3 > p {
-    width: 250px;
+    width: 350px;
     text-align: center;
     margin: auto;
   }
@@ -960,10 +960,11 @@ html {
   #contact {
     background: #ebddd5 url("../images/mobiel.png") no-repeat;
     background-size: 100px;
-    background-position: 0px 750px;
+    background-position: 50px 740px;
     height: 100%;
     grid-area: contact;
   }
+}
 
 
 /* Schermgrootte 3 */
@@ -1017,7 +1018,7 @@ html {
 
   img {
     margin: 20px;
-    width: 250px;
+    width: 400px;
   }
 
   /* nav */
@@ -1040,7 +1041,7 @@ html {
   }
 
   .menu {
-    float: left;
+    float: right;
   }
 
   li > a {
@@ -1066,7 +1067,7 @@ html {
     background-color: #ebddd5;
     height: auto;
     margin: 0px;
-    padding: 0px 0px 20px 30px;
+    padding: 0px 0px 30px 50px;
   }
 
   button {
@@ -1091,7 +1092,7 @@ html {
     background-color: #ebddd5;
     height: auto;
     margin: 0px;
-    padding: 0px 30px 20px 0px;
+    padding: 0px 50px 30px 0px;
   }
 
   #opdrachttitel {
@@ -1099,7 +1100,7 @@ html {
     background-color: #ebddd5;
     height: 50px;
     margin: 0px;
-    padding: 100px 0px 20px 0px;
+    padding: 100px 0px 0px 0px;
   }
 
   #opdrachttitel > h1 {
@@ -1167,8 +1168,8 @@ html {
 
   #sectie3 > video {
     padding-top: 20px;
-    height: 230px;
-    width: 130px;
+    height: 400px;
+    width: 200px;
   }
 
   #sectie3c {
@@ -1182,8 +1183,8 @@ html {
 
   #sectie3c > video {
     padding-top: 20px;
-    height: 200px;
-    width: 250px;
+    height: 300px;
+    width: 400px;
   }
 
   /* Slideshow */
@@ -1198,7 +1199,7 @@ html {
   }
 
   #titel1 > p {
-    width: 250px;
+    width: 450px;
     text-align: center;
     margin: auto;
   }
@@ -1213,7 +1214,7 @@ html {
   }
 
   #titel2 > p {
-    width: 250px;
+    width: 450px;
     text-align: center;
     margin: auto;
   }
@@ -1229,7 +1230,7 @@ html {
   }
 
   #titel3 > p {
-    width: 250px;
+    width: 450px;
     text-align: center;
     margin: auto;
   }
@@ -1277,8 +1278,8 @@ html {
   .card1 , .card2 , .card3{
     position: relative;
     
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 250px;
     overflow: hidden;
 
     border-radius: 5px;
@@ -1424,7 +1425,7 @@ html {
     height: 100%;
     grid-area: contact;
   }
-
+}
 
 /* Schermgrootte 4 */
 @media only screen and (min-width: 901px) {
@@ -1443,13 +1444,9 @@ html {
       'nav nav'
       'opdrachttitel opdrachttitel'
       'leftbutton rightbutton'
-      'sectieeen sectieeen'
-      'sectiea sectiea'
-      'sectietwee sectietwee'
-      'sectieb sectieb'
-      'sectiedrie sectiedrie'
-      'sectiec sectiec'
-      'titeleen titeleen'
+      'sectieeen sectiea'
+      'sectieb sectietwee'
+      'sectiedrie sectiec'
       'titeleen titeleen'
       'slideshoween slideshoween'
       'titeltwee titeltwee'
@@ -1477,7 +1474,7 @@ html {
 
   img {
     margin: 20px;
-    width: 250px;
+    width: 400px;
   }
 
   /* nav */
@@ -1500,7 +1497,7 @@ html {
   }
 
   .menu {
-    float: left;
+    float: right;
   }
 
   li > a {
@@ -1576,8 +1573,7 @@ html {
   }
 
   #sectie1 h2, #sectie1 p {
-    padding: 20px 50px 0px 70px;
-    text-align: center;
+    padding: 20px 50px 0px 80px;
   }
 
   #sectie1a {
@@ -1585,7 +1581,6 @@ html {
     background-color: white;
     width: auto;
     margin: 0px auto;
-    text-align: center;
     padding: 0px;
   }
 
@@ -1598,8 +1593,7 @@ html {
   }
 
   #sectie2 h2, #sectie2 p {
-    padding: 20px 50px 0px 70px;
-    text-align: center;
+    padding: 20px 50px 0px 50px;
   }
 
   #sectie2b {
@@ -1615,20 +1609,18 @@ html {
     grid-area: sectiedrie;
     background-color: white;
     height: auto;
-    text-align: center;
     margin: 0px auto;
     padding: 0px;
   }
 
   #sectie3 h2, #sectie3 p {
-    padding: 20px 50px 0px 70px;
-    text-align: center;
+    padding: 20px 50px 0px 80px;
   }
 
   #sectie3 > video {
     padding-top: 20px;
-    height: 230px;
-    width: 130px;
+    height: 400px;
+    width: 200px;
   }
 
   #sectie3c {
@@ -1641,9 +1633,9 @@ html {
   }
 
   #sectie3c > video {
-    padding-top: 20px;
-    height: 200px;
-    width: 250px;
+    padding-top: 80px;
+    height: 350px;
+    width: 450px;
   }
 
   /* Slideshow */
@@ -1658,8 +1650,7 @@ html {
   }
 
   #titel1 > p {
-    width: 250px;
-    text-align: center;
+    width: 550px;
     margin: auto;
   }
 
@@ -1673,11 +1664,9 @@ html {
   }
 
   #titel2 > p {
-    width: 250px;
-    text-align: center;
+    width: 550px;
     margin: auto;
   }
-
 
   #titel3 {
     grid-area: titeldrie;
@@ -1689,8 +1678,7 @@ html {
   }
 
   #titel3 > p {
-    width: 250px;
-    text-align: center;
+    width: 550px;
     margin: auto;
   }
 
@@ -1737,8 +1725,8 @@ html {
   .card1 , .card2 , .card3{
     position: relative;
     
-    width: 300px;
-    height: 200px;
+    width: 500px;
+    height: 350px;
     overflow: hidden;
 
     border-radius: 5px;
@@ -1879,8 +1867,8 @@ html {
 
   #contact {
     background: #ebddd5 url("../images/mobiel.png") no-repeat;
-    background-size: 100px;
-    background-position: 0px 750px;
+    background-size: 250px;
+    background-position: 50px 0px;
     height: 100%;
     grid-area: contact;
   }
