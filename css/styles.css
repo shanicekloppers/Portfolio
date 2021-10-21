@@ -141,7 +141,8 @@ html {
   .headertekst {
     position: absolute;
     margin-top: 150px;
-    margin-left: 25%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   /* intro illustratie */
@@ -149,13 +150,13 @@ html {
   .illustration {
     grid-area: illu;
     height: auto;
-    margin: 0px 0px 0px 70px;
+    margin-left: 10%;
+    margin-right: 10%;
     padding: 0px;
   }
 
   .illustration > img {
     width: 100%;
-    margin-top: 10px;
     margin-bottom: -10px;
     padding: 0px;
   }
@@ -166,7 +167,7 @@ html {
     background-color: #ebddd5;
     grid-area: about;
     vertical-align: text-top;
-    padding: 100px;
+    padding: 20%;
   }
 
   img.align-left {
@@ -308,11 +309,11 @@ html {
 
   li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 25px;
   }
 
   ul {
-    padding: 0px 0px 0px 20px;
+    padding: 0px 0px 0px 30px;
   }
 
   .name {
@@ -338,7 +339,7 @@ html {
   .headertekst {
     position: absolute;
     margin-top: 150px;
-    margin-left: 25%;
+    margin-left: 20%;
   }
 
   /* intro illustratie */
@@ -352,7 +353,6 @@ html {
 
   .illustration > img {
     width: 100%;
-    margin-top: 10px;
     margin-bottom: -10px;
     padding: 0px;
   }
@@ -363,7 +363,7 @@ html {
     background-color: #ebddd5;
     grid-area: about;
     vertical-align: text-top;
-    padding: 100px;
+    padding: 20%;
   }
 
   img.align-left {
