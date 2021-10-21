@@ -114,6 +114,10 @@ html {
     margin-right: 20px;
   }
 
+  ul {
+    padding: 0px 0px 0px 20px;
+  }
+
   .name {
     float: left;
   }
@@ -573,6 +577,10 @@ html {
   li {
     display: inline;
     margin-right: 20px;
+  }
+
+  ul {
+    padding: 0px 0px 0px 20px;
   }
 
   .name {
@@ -1036,6 +1044,10 @@ html {
     margin-right: 20px;
   }
 
+  ul {
+    padding: 0px 0px 0px 30px;
+  }
+
   .name {
     float: left;
   }
@@ -1490,6 +1502,10 @@ html {
   li {
     display: inline;
     margin-right: 20px;
+  }
+
+  ul {
+    padding: 0px 0px 0px 40px;
   }
 
   .name {
